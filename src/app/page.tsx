@@ -3,6 +3,9 @@
 import { useEffect } from 'react';
 import Hero from '@/components/home/hero';
 import Mission from '@/components/home/mission';
+import Testimonials from '@/components/home/testimonials';
+import GalleryPreview from '@/components/home/gallery-preview';
+import GetInvolved from '@/components/home/get-involved';
 import { useDonation } from '@/context/donation-context';
 
 export default function Home() {
@@ -20,6 +23,9 @@ export default function Home() {
     <>
       <Hero />
       <Mission />
+      <Testimonials />
+      <GalleryPreview />
+      <GetInvolved />
     </>
   );
 }

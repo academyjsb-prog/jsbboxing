@@ -47,3 +47,24 @@ export const teamMembers = [
 ];
 
 export const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-'));
+
+export const testimonials = [
+  {
+    name: 'Aarav Sharma',
+    role: 'Junior Champion',
+    quote: 'JSB Academy is more than a gym; it’s my second home. The coaches taught me discipline, respect, and how to believe in myself. I wouldn’t be the person I am today without them.',
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-1'),
+  },
+  {
+    name: 'Priya Patel',
+    role: 'Parent',
+    quote: 'My son was struggling with confidence. Since joining JSB, I’ve seen a complete transformation. He’s focused, responsible, and has a positive outlook on life. This place is truly special.',
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-2'),
+  },
+  {
+    name: 'Rohan Singh',
+    role: 'Former Student, Now Mentor',
+    quote: 'This academy saved me. It gave me a purpose and a community that felt like family. Now, I’m proud to give back and mentor the next generation of fighters who walk through these doors.',
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-3'),
+  }
+];

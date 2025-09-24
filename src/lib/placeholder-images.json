@@ -89,6 +89,24 @@
       "description": "Profile picture of a founder.",
       "imageUrl": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwcm9maWxlfGVufDB8fHx8MTc1ODU4NzI3OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person profile"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a young boxer.",
+      "imageUrl": "https://images.unsplash.com/photo-1710478122325-727f1a4c93aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b3VuZyUyMGJveGVyfGVufDB8fHx8MTc1ODcwMzQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "young boxer"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a parent.",
+      "imageUrl": "https://images.unsplash.com/photo-1542644416-2289c587843e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "parent portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a mentor.",
+      "imageUrl": "https://images.unsplash.com/photo-1515935909408-1c723370b5e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mentor portrait"
     }
   ]
 }
