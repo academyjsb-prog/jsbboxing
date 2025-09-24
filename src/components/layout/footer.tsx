@@ -14,7 +14,7 @@ export default function Footer() {
               <BoxingGloveIcon className="h-8 w-8 text-primary" />
               <span className="font-headline">JSB Boxing Academy</span>
             </Link>
-            <p className="mt-4 max-w-xs text-sm text-muted-foreground">
+            <p className="mt-4 text-sm text-muted-foreground">
               Empowering youth through the discipline of boxing.
             </p>
             <div className="mt-6 flex gap-4">

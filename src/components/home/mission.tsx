@@ -30,7 +30,7 @@ export default function Mission() {
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
             More Than Just a Gym
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+          <p className="mt-4 mx-auto text-lg text-muted-foreground">
             We are a family, a support system, and a beacon of hope for the next generation.
           </p>
         </div>

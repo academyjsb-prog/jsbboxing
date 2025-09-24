@@ -5,6 +5,7 @@ import TeamSection from '@/components/about/team-section';
 import { Button } from '@/components/ui/button';
 import { useDonation } from '@/context/donation-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Award, Target, Users } from 'lucide-react';
 
 export default function AboutPageClient() {
   const { openDonationDialog } = useDonation();
@@ -16,7 +17,7 @@ export default function AboutPageClient() {
         
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">Our Story</h1>
-          <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+          <p className="mt-4 text-lg text-muted-foreground">
             From a small room with a big dream to a thriving academy, our journey is one of passion, perseverance, and community.
           </p>
         </div>
@@ -37,19 +38,47 @@ export default function AboutPageClient() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold font-headline">The Vision of JSB Academy</h2>
             <p className="text-muted-foreground">
-              JSB Boxing Academy was founded on a simple yet powerful belief: that the discipline and art of boxing can be a transformative force in a young person's life. We started in a borrowed space with a handful of gloves and an unwavering commitment to provide a positive outlet for the youth in our community.
+              JSB Boxing Academy was founded on a simple yet powerful belief: that the discipline and art of boxing can be a transformative force in a young person's life. We started in a borrowed space with a handful of gloves and an unwavering commitment to provide a positive outlet for the youth in our community. We saw potential where others saw challenges, and a fire in the hearts of young kids that just needed a place to be channeled.
             </p>
             <p className="text-muted-foreground">
-              Today, we are proud to be a pillar of the community, offering not just world-class boxing training, but also mentorship, academic support, and a safe haven for dozens of aspiring athletes. Our vision is to create champions—not just in the ring, but in every aspect of their lives.
+              Today, we are proud to be a pillar of the community, offering not just world-class boxing training, but also mentorship, academic support, and a safe haven for dozens of aspiring athletes. Our vision is to create champions—not just in the ring, but in every aspect of their lives, fostering resilience, integrity, and a sense of belonging.
             </p>
           </div>
         </div>
 
-        <TeamSection />
+        <div className="py-20 bg-card rounded-lg shadow-xl">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold font-headline">Our Core Values</h2>
+              <p className="mt-4 text-lg text-muted-foreground">The principles that guide every punch, every lesson, and every interaction.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div className="flex flex-col items-center">
+                <Award className="h-12 w-12 text-primary mb-4" />
+                <h3 className="text-xl font-bold font-headline">Excellence</h3>
+                <p className="text-muted-foreground mt-2">Striving for the best in sport and life, pushing our limits and celebrating progress at every step.</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <Target className="h-12 w-12 text-primary mb-4" />
+                <h3 className="text-xl font-bold font-headline">Discipline</h3>
+                <p className="text-muted-foreground mt-2">Cultivating focus, self-control, and dedication as the cornerstones of success, inside and outside the ring.</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <Users className="h-12 w-12 text-primary mb-4" />
+                <h3 className="text-xl font-bold font-headline">Community</h3>
+                <p className="text-muted-foreground mt-2">Building a supportive family where every member feels safe, respected, and empowered to grow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-20">
+          <TeamSection />
+        </div>
 
         <div className="mt-20 text-center bg-card p-10 rounded-lg shadow-xl">
           <h2 className="text-3xl font-bold font-headline">Support Our Mission</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
+          <p className="mt-4 text-muted-foreground">
             Your contribution helps us keep the lights on, the gloves new, and the dreams of our young fighters alive. Join us in making a difference.
           </p>
           <Button size="lg" onClick={openDonationDialog} className="mt-6">
