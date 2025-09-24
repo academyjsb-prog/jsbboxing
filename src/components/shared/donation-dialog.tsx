@@ -16,13 +16,17 @@ export default function DonationDialog() {
   const [timeSpent, setTimeSpent] = useState(0);
 
   useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: NodeJS.Timeout | undefined;
     if (isOpen) {
       interval = setInterval(() => {
         setTimeSpent(prev => prev + 1);
       }, 1000);
     }
-    return () => clearInterval(interval);
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
   }, [isOpen]);
 
   useEffect(() => {
@@ -32,6 +36,7 @@ export default function DonationDialog() {
         setError(null);
         setSuggestion(null);
         try {
+          // Pass the time spent so far, but don't re-run this effect when it changes.
           const result = await personalizedDonationPrompt({
             timeSpent,
             pagesViewed: 1, // Simplified for this example
@@ -46,7 +51,8 @@ export default function DonationDialog() {
       };
       getSuggestion();
     }
-  }, [isOpen, timeSpent]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]);
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
