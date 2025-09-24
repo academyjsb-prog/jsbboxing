@@ -19,7 +19,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-7xl items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <BoxingGloveIcon className="h-7 w-7 text-primary" />
-          <span className="font-headline">Punch for Hope</span>
+          <span className="font-headline">JSB Boxing Academy</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -45,7 +45,7 @@ export default function Header() {
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={() => setIsMenuOpen(false)}>
                   <BoxingGloveIcon className="h-7 w-7 text-primary" />
-                  <span className="font-headline">Punch for Hope</span>
+                  <span className="font-headline">JSB Boxing Academy</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (

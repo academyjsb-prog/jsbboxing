@@ -1,4 +1,9 @@
 import GalleryGrid from '@/components/gallery/gallery-grid';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Gallery',
+};
 
 export default function GalleryPage() {
   return (

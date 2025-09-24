@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold">
               <BoxingGloveIcon className="h-8 w-8 text-primary" />
-              <span className="font-headline">Punch for Hope</span>
+              <span className="font-headline">JSB Boxing Academy</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               Empowering youth through the discipline of boxing.
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Punch for Hope. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} JSB Boxing Academy. All rights reserved.</p>
         </div>
       </div>
     </footer>

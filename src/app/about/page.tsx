@@ -5,6 +5,11 @@ import TeamSection from '@/components/about/team-section';
 import { Button } from '@/components/ui/button';
 import { useDonation } from '@/context/donation-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+};
 
 export default function AboutPage() {
   const { openDonationDialog } = useDonation();

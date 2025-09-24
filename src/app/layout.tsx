@@ -7,7 +7,10 @@ import Footer from '@/components/layout/footer';
 import DonationDialog from '@/components/shared/donation-dialog';
 
 export const metadata: Metadata = {
-  title: 'Punch for Hope',
+  title: {
+    default: 'JSB Boxing Academy - Punch for Hope',
+    template: '%s | JSB Boxing Academy',
+  },
   description: 'JSB Boxing Academy - Training Champions, Building Futures',
   icons: {
     icon: '/favicon.ico',
