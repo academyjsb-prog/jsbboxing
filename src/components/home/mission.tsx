@@ -25,7 +25,7 @@ const features = [
 export default function Mission() {
   return (
     <section className="py-12 md:py-20 bg-background">
-      <div className="container mx-auto max-w-7xl px-4">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
             More Than Just a Gym

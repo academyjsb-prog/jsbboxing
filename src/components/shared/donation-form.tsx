@@ -109,7 +109,7 @@ export default function DonationForm({ suggestedAmount }: DonationFormProps) {
             name="customAmount"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Custom Amount</FormLabel>
+                <FormLabel>Custom Amount (INR)</FormLabel>
                 <FormControl>
                   <Input type="number" placeholder="Enter amount" {...field} />
                 </FormControl>
