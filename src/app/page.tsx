@@ -6,6 +6,7 @@ import Mission from '@/components/home/mission';
 import Testimonials from '@/components/home/testimonials';
 import GalleryPreview from '@/components/home/gallery-preview';
 import GetInvolved from '@/components/home/get-involved';
+import AboutPreview from '@/components/home/about-preview';
 import { useDonation } from '@/context/donation-context';
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <Testimonials />
       <GalleryPreview />
       <GetInvolved />
+      <AboutPreview />
     </>
   );
 }
