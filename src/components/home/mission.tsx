@@ -1,4 +1,4 @@
-import { Shield, HeartHandshake } from 'lucide-react';
+import { Shield, HeartHandshake, Globe } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BoxingGloveIcon } from '@/components/shared/icons';
 
@@ -10,10 +10,10 @@ const features = [
       'We train and support kids from poor backgrounds, helping them gain confidence, discipline, and skills through boxing — so they can dream bigger and achieve more.',
   },
   {
-    icon: <Shield className="h-10 w-10 text-primary" />,
+    icon: <Globe className="h-10 w-10 text-primary" />,
     title: 'Our Vision',
     description:
-      'We envision a community where every young person has the opportunity to realize their potential, using the discipline of sport to overcome adversity and become leaders.',
+      'We believe every child deserves a chance to shine. Our goal is to create a world where talent and hard work matter more than circumstances.',
   },
   {
     icon: <HeartHandshake className="h-10 w-10 text-primary" />,
