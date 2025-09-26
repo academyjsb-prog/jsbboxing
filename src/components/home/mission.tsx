@@ -28,7 +28,7 @@ export default function Mission() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
-            More Than Just a Gym
+            Why We Fight
           </h2>
           <p className="mt-4 mx-auto text-lg text-muted-foreground">
             We are a family, a support system, and a beacon of hope for the next generation.
