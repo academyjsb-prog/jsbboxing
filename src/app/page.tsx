@@ -13,6 +13,7 @@ export default function Home() {
   const { setIsOpen } = useDonation();
 
   useEffect(() => {
+    // This will only run on the client, after initial hydration
     const timer = setTimeout(() => {
       setIsOpen(true);
     }, 5000); // 5 seconds
