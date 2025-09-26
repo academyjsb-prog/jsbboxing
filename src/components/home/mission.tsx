@@ -1,4 +1,4 @@
-import { Shield, HeartHandshake, Globe } from 'lucide-react';
+import { Shield, HeartHandshake, Globe, Target } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BoxingGloveIcon } from '@/components/shared/icons';
 
@@ -16,10 +16,10 @@ const features = [
       'We believe every child deserves a chance to shine. Our goal is to create a world where talent and hard work matter more than circumstances.',
   },
   {
-    icon: <HeartHandshake className="h-10 w-10 text-primary" />,
+    icon: <Target className="h-10 w-10 text-primary" />,
     title: 'Our Goals',
     description:
-      'To offer free, high-quality boxing training, mentorship programs, and educational support, empowering our members to achieve excellence in and out of the ring.',
+      'We want to help young boxers grow, compete at big tournaments, and become role models who inspire their families and communities.',
   },
 ];
 
