@@ -7,19 +7,13 @@ const features = [
     icon: <BoxingGloveIcon className="h-8 w-8 text-primary" />,
     title: 'Our Mission',
     description:
-      'We train and support kids from poor backgrounds, helping them gain confidence, discipline, and skills through boxing — so they can dream bigger and achieve more.',
+      'To help every child be able to access free boxing training, build discipline, gain confidence, and learn life skills that go beyond the ring.',
   },
   {
     icon: <Globe className="h-8 w-8 text-primary" />,
     title: 'Our Vision',
     description:
-      'We believe every child deserves a chance to shine. Our goal is to create a world where talent and hard work matter more than circumstances.',
-  },
-  {
-    icon: <Target className="h-8 w-8 text-primary" />,
-    title: 'Our Goals',
-    description:
-      'We want to help young boxers grow, compete at big tournaments, and become role models who inspire their families and communities.',
+      'To create a world where every child is able to dream, grow, and succeed — no matter their caste, creed, religion, or financial background.',
   },
 ];
 
@@ -35,7 +29,7 @@ export default function Mission() {
             We fight not just inside the ring, but against poverty, inequality, and lost opportunities.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {features.map((feature) => (
             <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="items-center">
