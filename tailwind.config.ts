@@ -20,7 +20,7 @@ const config = {
       fontFamily: {
         sans: ['var(--font-sans)'],
         body: ['"Playfair Display"', 'serif'],
-        headline: ['PT Sans', 'sans-serif'],
+        headline: ['"Playfair Display"', 'serif'],
         playfair: ['"Playfair Display"', 'serif'],
       },
       colors: {
