@@ -29,7 +29,7 @@ export default function Hero() {
           Every Punch Matters
         </h1>
         <p className="mt-4 text-base text-gray-200 sm:text-lg">
-          JSB Boxing Academy: Forging Champions in the Ring and in Life.
+          For our kids, boxing isn’t just a sport — it’s a chance to grow, dream, and build a better future.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Button size="lg" onClick={openDonationDialog}>
