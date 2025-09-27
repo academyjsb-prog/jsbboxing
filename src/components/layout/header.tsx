@@ -7,7 +7,6 @@ import { Menu, X } from 'lucide-react';
 import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { BoxingGloveIcon } from '@/components/shared/icons';
 import { useDonation } from '@/context/donation-context';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
@@ -19,11 +18,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
-          <span className="font-headline">
+          <div className="font-headline">
             <span className="text-foreground">JSB </span>
             <span className="text-primary">Boxing </span>
             <span className="text-foreground">Academy</span>
-          </span>
+          </div>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((link) => (
@@ -48,11 +47,11 @@ export default function Header() {
             <SheetContent side="right">
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={() => setIsMenuOpen(false)}>
-                  <span className="font-headline">
+                  <div className="font-headline">
                     <span className="text-foreground">JSB </span>
                     <span className="text-primary">Boxing </span>
                     <span className="text-foreground">Academy</span>
-                  </span>
+                  </div>
                 </Link>
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
