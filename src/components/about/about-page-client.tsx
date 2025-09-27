@@ -45,33 +45,31 @@ export default function AboutPageClient() {
           </div>
         </div>
         
-        <div className="py-20 bg-card rounded-lg shadow-xl mb-20 text-center">
-            <h2 className="text-3xl font-bold font-headline mb-4">Our Impact</h2>
-            <p className="text-muted-foreground max-w-4xl mx-auto px-4">
-              Over the years, JSB Boxing Academy has trained hundreds of children and young people from underprivileged backgrounds, many of whom have proudly represented India in national and international championships. For our students, the academy is not just a training ground, but a safe space where discipline, resilience, and hope are built every single day. Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond.
-            </p>
+        <div className="py-12 bg-card rounded-lg shadow-xl mb-12">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold font-headline mb-4">Our Impact and How You Can Help</h2>
+            <div className="space-y-4 text-muted-foreground">
+                <p>
+                    Over the years, JSB Boxing Academy has trained hundreds of children and young people from underprivileged backgrounds, many of whom have proudly represented India in national and international championships. For our students, the academy is not just a training ground, but a safe space where discipline, resilience, and hope are built every single day.
+                </p>
+                <p>
+                    But we cannot do this alone. Your support matters. Every glove, every punch, every medal won is the result of a community standing together. By joining hands with us — as a supporter, donor, or volunteer — you can help a child dream bigger, fight harder, and achieve more.
+                </p>
+                <p>
+                    JSB Boxing Academy is citizen-led and open to all. If you’re a boxer, coach, or trainer, you can come and share your skills. If you want to run a free workshop, our children are eager to learn. If you wish to donate or volunteer, your support will help us grow stronger. At JSB, everyone has a role to play — because building champions is not the work of one person, but of an entire community standing together.
+                </p>
+                <p className="font-semibold text-foreground">
+                    Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond.
+                </p>
+            </div>
+            <Button size="lg" onClick={openDonationDialog} className="mt-8">
+              Join Us in the Fight
+            </Button>
+          </div>
         </div>
 
         <div className="mt-20">
           <TeamSection />
-        </div>
-
-        <div className="mt-20 text-center bg-card p-10 rounded-lg shadow-xl">
-          <h2 className="text-3xl font-bold font-headline">Join the Fight</h2>
-            <div className="max-w-4xl mx-auto text-muted-foreground mt-4 space-y-4">
-                <p>
-                    But we can’t do this alone. JSB Boxing Academy is citizen-led and open to all. If you’re a boxer, coach, or trainer, you can come and share your skills. If you want to run a free workshop, our children are eager to learn. If you wish to donate or volunteer, your support will help us grow stronger.
-                </p>
-                <p className="font-semibold text-foreground">
-                    At JSB, everyone has a role to play — because building champions is not the work of one person, but of an entire community standing together.
-                </p>
-                <p>
-                  Join us in any way you can. Together, let’s fight for their dreams.
-                </p>
-            </div>
-          <Button size="lg" onClick={openDonationDialog} className="mt-6">
-            Donate to Our Cause
-          </Button>
         </div>
       </div>
     </div>
