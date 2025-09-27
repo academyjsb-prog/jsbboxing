@@ -1,4 +1,4 @@
-import { Shield, HeartHandshake, Globe, Target } from 'lucide-react';
+import { Globe, Target } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BoxingGloveIcon } from '@/components/shared/icons';
 
@@ -15,6 +15,12 @@ const features = [
     description:
       'To create a world where every child is able to dream, grow, and succeed — no matter their caste, creed, religion, or financial background.',
   },
+  {
+    icon: <Target className="h-8 w-8 text-primary" />,
+    title: 'Our Goal',
+    description:
+      'To guide young boxers so they are able to compete at national and international levels and become role models who inspire their families and communities.',
+  }
 ];
 
 export default function Mission() {
@@ -29,7 +35,7 @@ export default function Mission() {
             We fight not just inside the ring, but against poverty, inequality, and lost opportunities.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => (
             <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="items-center">
