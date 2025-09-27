@@ -21,6 +21,7 @@ const config = {
         sans: ['var(--font-sans)'],
         body: ['PT Sans', 'sans-serif'],
         headline: ['PT Sans', 'sans-serif'],
+        playfair: ['"Playfair Display"', 'serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
