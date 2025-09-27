@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -71,7 +72,7 @@ export default function GetInvolved() {
               Get Involved
             </h2>
             <p className="mt-4 mx-auto text-base text-muted-foreground font-body text-sm">
-              There are many ways to support our mission and empower our youth.
+              There are many ways to support our mission and empower our kids.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
