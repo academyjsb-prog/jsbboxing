@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -8,7 +9,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function AboutPageClient() {
   const { openDonationDialog } = useDonation();
-  const aboutImage = PlaceHolderImages.find(img => img.id === 'gallery-3');
+  const aboutImage = PlaceHolderImages.find(img => img.id === 'gallery-6');
 
   return (
     <div className="bg-background text-foreground">
