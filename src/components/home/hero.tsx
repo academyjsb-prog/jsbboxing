@@ -27,7 +27,7 @@ export default function Hero() {
         <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           PUNCH FOR HOPE
         </h1>
-        <p className="mt-4 text-lg text-gray-200 sm:text-xl">
+        <p className="mt-4 text-base text-gray-200 sm:text-lg">
           JSB Boxing Academy: Forging Champions in the Ring and in Life.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">

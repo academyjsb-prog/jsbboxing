@@ -70,7 +70,7 @@ export default function GetInvolved() {
             <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
               Get Involved
             </h2>
-            <p className="mt-4 mx-auto text-lg text-muted-foreground">
+            <p className="mt-4 mx-auto text-base text-muted-foreground">
               There are many ways to support our mission and empower our youth.
             </p>
           </div>
@@ -84,7 +84,7 @@ export default function GetInvolved() {
                   <CardTitle className="mt-4 font-headline">{option.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
-                  <p className="text-muted-foreground flex-grow">{option.description}</p>
+                  <p className="text-muted-foreground text-sm flex-grow">{option.description}</p>
                   <Button onClick={() => handleAction(option.action)} className="mt-6 w-full">
                     {option.buttonText}
                   </Button>

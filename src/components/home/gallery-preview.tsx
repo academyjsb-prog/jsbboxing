@@ -16,7 +16,7 @@ export default function GalleryPreview() {
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
             A Glimpse of the Action
           </h2>
-          <p className="mt-4 mx-auto text-lg text-muted-foreground">
+          <p className="mt-4 mx-auto text-base text-muted-foreground">
             The sweat, dedication, and spirit of our academy, captured in moments.
           </p>
         </div>

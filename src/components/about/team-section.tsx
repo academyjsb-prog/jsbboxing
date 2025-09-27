@@ -8,7 +8,7 @@ export default function TeamSection() {
     <section>
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">Meet the Team</h2>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+        <p className="mt-4 max-w-2xl mx-auto text-base text-muted-foreground">
           The dedicated individuals behind our success.
         </p>
       </div>
