@@ -35,7 +35,7 @@ const involvementOptions = [
     icon: <Handshake className="h-8 w-8 text-primary" />,
     title: 'Share Your Skills',
     description: 'Run a workshop or session — from boxing to life skills, every lesson empowers our kids.',
-    buttonText: 'Learn More',
+    buttonText: 'Host a Session',
     action: 'share',
     content: {
       title: 'Share Your Skills',
