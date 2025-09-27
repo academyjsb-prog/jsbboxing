@@ -37,14 +37,14 @@ export default function Mission() {
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => (
-            <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="items-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+            <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <CardHeader className="items-center pb-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
                   {feature.icon}
                 </div>
-                <CardTitle className="mt-4 font-headline">{feature.title}</CardTitle>
+                <CardTitle className="font-headline">{feature.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <p className="text-muted-foreground font-body text-sm">{feature.description}</p>
               </CardContent>
             </Card>
