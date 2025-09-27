@@ -18,7 +18,7 @@ export default function Testimonials() {
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
             What Our Supporters Say
           </h2>
-          <p className="mt-4 mx-auto text-lg text-muted-foreground">
+          <p className="mt-4 mx-auto text-lg text-muted-foreground font-playfair">
             The journey of JSB Boxing Academy is powered by people who believe in us. Their words of encouragement and trust keep us moving forward.
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function Testimonials() {
                 <div className="p-1 h-full">
                   <Card className="flex flex-col justify-between h-full p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardContent className="p-0 flex-grow">
-                      <p className="text-muted-foreground italic">
+                      <p className="text-muted-foreground italic font-playfair">
                         "{testimonial.quote}"
                       </p>
                     </CardContent>
@@ -50,8 +50,8 @@ export default function Testimonials() {
                         )}
                         <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                       </Avatar>
-                      <h3 className="mt-4 text-lg font-bold font-headline">{testimonial.name}</h3>
-                      <p className="text-sm text-primary font-semibold">{testimonial.role}</p>
+                      <h3 className="mt-4 text-lg font-bold font-headline font-playfair">{testimonial.name}</h3>
+                      <p className="text-sm text-primary font-semibold font-playfair">{testimonial.role}</p>
                     </div>
                   </Card>
                 </div>
