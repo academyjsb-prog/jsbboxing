@@ -15,8 +15,8 @@ const involvementOptions = [
     buttonText: 'Donate Now',
     action: 'donate',
     content: {
-      title: '',
-      description: ''
+      title: 'Support Our Fighters',
+      description: 'Your generosity fuels their dreams and builds a stronger community. Every contribution, big or small, makes a difference.'
     }
   },
   {
@@ -27,7 +27,7 @@ const involvementOptions = [
     action: 'sponsor',
     content: {
       title: 'Become a Sponsor',
-      description: 'Sponsoring JSB Boxing Academy is a unique opportunity to align your brand with a cause that builds champions. We offer various sponsorship packages that provide visibility at our events, on our website, and social media. Contact us at sponsor@jsboxing.com to learn more.'
+      description: 'Sponsoring JSB Boxing Academy is a unique opportunity to align your brand with a cause that builds champions. We offer various sponsorship packages that provide visibility at our events, on our website, and on social media. To discuss sponsorship opportunities, please email us at sponsor@jsboxing.com.'
     }
   },
   {
@@ -38,7 +38,7 @@ const involvementOptions = [
     action: 'volunteer',
     content: {
       title: 'Volunteer With Us',
-      description: 'We are always looking for passionate individuals to join our team. Whether you can help with coaching, tutoring, event organization, or administrative tasks, your contribution is invaluable. Email us at volunteer@jsboxing.com to get started.'
+      description: 'We are always looking for passionate individuals to join our team. Whether you can help with coaching, tutoring, event organization, or administrative tasks, your contribution is invaluable. To get started, please send an email to volunteer@jsboxing.com with your availability and areas of interest.'
     }
   },
 ];
