@@ -15,13 +15,6 @@ export default function AboutPageClient() {
     <div className="bg-background text-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">Our Story</h1>
-          <p className="mt-4 text-base text-muted-foreground font-body">
-            From a small room with a big dream to a thriving academy, our journey is one of passion, perseverance, and community.
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
           {aboutImage && (
             <div className="rounded-lg overflow-hidden shadow-lg">
