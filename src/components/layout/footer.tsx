@@ -16,15 +16,15 @@ import {
 } from '@/components/ui/dialog';
 
 const involvementContent = {
-  sponsor: {
-    title: 'Become a Sponsor',
-    description:
-      'Sponsoring JSB Boxing Academy is a unique opportunity to align your brand with a cause that builds champions. We offer various sponsorship packages that provide visibility at our events, on our website, and on social media. To discuss sponsorship opportunities, please email us at sponsor@jsboxing.com.',
-  },
   volunteer: {
     title: 'Volunteer With Us',
     description:
       'We are always looking for passionate individuals to join our team. Whether you can help with coaching, tutoring, event organization, or administrative tasks, your contribution is invaluable. To get started, please send an email to volunteer@jsboxing.com with your availability and areas of interest.',
+  },
+  share: {
+    title: 'Share Your Skills',
+    description:
+      'If you have a skill to share, our children are eager to learn. From boxing techniques to financial literacy or public speaking, your knowledge can make a lasting impact. Please email us at volunteer@jsboxing.com to discuss how you can contribute.',
   },
 };
 
@@ -33,7 +33,7 @@ export default function Footer() {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [dialogContent, setDialogContent] = useState({ title: '', description: '' });
 
-  const handleSupportClick = (type: 'sponsor' | 'volunteer') => {
+  const handleSupportClick = (type: 'volunteer' | 'share') => {
     setDialogContent(involvementContent[type]);
     setDialogOpen(true);
   };
@@ -76,11 +76,11 @@ export default function Footer() {
                 </nav>
               </div>
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium">Support Us</p>
+                <p className="text-lg font-medium">Get Involved</p>
                 <nav className="mt-4 flex flex-col space-y-2 text-sm">
                   <button onClick={openDonationDialog} className="text-left text-muted-foreground transition hover:text-primary">Donate</button>
                   <button onClick={() => handleSupportClick('volunteer')} className="text-left text-muted-foreground transition hover:text-primary">Volunteer</button>
-                  <button onClick={() => handleSupportClick('sponsor')} className="text-left text-muted-foreground transition hover:text-primary">Sponsor</button>
+                  <button onClick={() => handleSupportClick('share')} className="text-left text-muted-foreground transition hover:text-primary">Share Your Skills</button>
                 </nav>
               </div>
               <div className="text-center sm:text-left">
