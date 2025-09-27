@@ -49,7 +49,7 @@ export default function Footer() {
                 <span className="font-headline">JSB Boxing Academy</span>
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
-                Empowering youth through the discipline of boxing.
+                JSB Boxing Academy is a citizen-led, not-for-profit initiative providing free boxing training to children from villages. Open to all, we build confidence, discipline, and dreams beyond the ring
               </p>
               <div className="mt-6 flex gap-4">
                 {socialLinks.map((link) => (
