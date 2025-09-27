@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -36,7 +37,6 @@ export default function DonationDialog() {
         setError(null);
         setSuggestion(null);
         try {
-          // Pass the time spent so far, but don't re-run this effect when it changes.
           const result = await personalizedDonationPrompt({
             timeSpent,
             pagesViewed: 1, // Simplified for this example
@@ -44,14 +44,17 @@ export default function DonationDialog() {
           setSuggestion(result);
         } catch (e) {
           console.error(e);
-          setError('Could not get a personalized suggestion. Please choose an amount.');
+          // Gracefully fallback to default amounts without showing a jarring error.
+          // The form will work perfectly fine without the suggestion.
+          setError(null);
         } finally {
           setIsLoading(false);
         }
       };
       getSuggestion();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // The dependency array is intentionally empty to only run this once when the dialog opens.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
   return (
@@ -73,8 +76,8 @@ export default function DonationDialog() {
               <Skeleton className="h-4 w-3/4 mt-2" />
             </div>
           )}
-          {error && <p className="text-sm text-destructive">{error}</p>}
-          {suggestion && (
+          
+          {suggestion && !isLoading && (
             <div className="p-4 border-2 border-primary rounded-lg bg-primary/10 transition-all duration-500">
               <p className="text-sm font-semibold text-primary">Personalized Suggestion for You:</p>
               <p className="text-lg font-bold">₹{suggestion.donationAmount}</p>
