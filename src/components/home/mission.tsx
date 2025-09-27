@@ -4,19 +4,19 @@ import { BoxingGloveIcon } from '@/components/shared/icons';
 
 const features = [
   {
-    icon: <BoxingGloveIcon className="h-10 w-10 text-primary" />,
+    icon: <BoxingGloveIcon className="h-8 w-8 text-primary" />,
     title: 'Our Mission',
     description:
       'We train and support kids from poor backgrounds, helping them gain confidence, discipline, and skills through boxing — so they can dream bigger and achieve more.',
   },
   {
-    icon: <Globe className="h-10 w-10 text-primary" />,
+    icon: <Globe className="h-8 w-8 text-primary" />,
     title: 'Our Vision',
     description:
       'We believe every child deserves a chance to shine. Our goal is to create a world where talent and hard work matter more than circumstances.',
   },
   {
-    icon: <Target className="h-10 w-10 text-primary" />,
+    icon: <Target className="h-8 w-8 text-primary" />,
     title: 'Our Goals',
     description:
       'We want to help young boxers grow, compete at big tournaments, and become role models who inspire their families and communities.',
@@ -39,7 +39,9 @@ export default function Mission() {
           {features.map((feature) => (
             <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="items-center">
-                {feature.icon}
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                  {feature.icon}
+                </div>
                 <CardTitle className="mt-4 font-headline">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>

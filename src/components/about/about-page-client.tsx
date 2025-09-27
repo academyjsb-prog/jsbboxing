@@ -54,17 +54,23 @@ export default function AboutPageClient() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div className="flex flex-col items-center">
-                <Award className="h-12 w-12 text-primary mb-4" />
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
+                  <Award className="h-8 w-8 text-primary" />
+                </div>
                 <h3 className="text-xl font-bold font-headline">Excellence</h3>
                 <p className="text-muted-foreground mt-2">Striving for the best in sport and life, pushing our limits and celebrating progress at every step.</p>
               </div>
               <div className="flex flex-col items-center">
-                <Target className="h-12 w-12 text-primary mb-4" />
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
+                  <Target className="h-8 w-8 text-primary" />
+                </div>
                 <h3 className="text-xl font-bold font-headline">Discipline</h3>
                 <p className="text-muted-foreground mt-2">Cultivating focus, self-control, and dedication as the cornerstones of success, inside and outside the ring.</p>
               </div>
               <div className="flex flex-col items-center">
-                <Users className="h-12 w-12 text-primary mb-4" />
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
+                  <Users className="h-8 w-8 text-primary" />
+                </div>
                 <h3 className="text-xl font-bold font-headline">Community</h3>
                 <p className="text-muted-foreground mt-2">Building a supportive family where every member feels safe, respected, and empowered to grow.</p>
               </div>

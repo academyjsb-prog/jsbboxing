@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 
 const involvementOptions = [
   {
-    icon: <Heart className="h-10 w-10 text-primary" />,
+    icon: <Heart className="h-8 w-8 text-primary" />,
     title: 'Donate',
     description: 'Your financial support provides equipment, facilities, and opportunities for our young athletes.',
     buttonText: 'Donate Now',
@@ -20,7 +20,7 @@ const involvementOptions = [
     }
   },
   {
-    icon: <Handshake className="h-10 w-10 text-primary" />,
+    icon: <Handshake className="h-8 w-8 text-primary" />,
     title: 'Sponsor',
     description: 'Become a corporate or individual sponsor to support our programs and gain visibility in the community.',
     buttonText: 'Learn More',
@@ -31,7 +31,7 @@ const involvementOptions = [
     }
   },
   {
-    icon: <UserPlus className="h-10 w-10 text-primary" />,
+    icon: <UserPlus className="h-8 w-8 text-primary" />,
     title: 'Volunteer',
     description: 'Lend your time and skills as a mentor, tutor, or event helper. Your presence makes a huge difference.',
     buttonText: 'Join Us',
@@ -78,7 +78,9 @@ export default function GetInvolved() {
             {involvementOptions.map((option) => (
               <Card key={option.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
                 <CardHeader className="items-center">
-                  {option.icon}
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                    {option.icon}
+                  </div>
                   <CardTitle className="mt-4 font-headline">{option.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
