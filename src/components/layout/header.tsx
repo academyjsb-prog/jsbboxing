@@ -20,8 +20,8 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2 font-bold text-lg">
           <div className="font-headline">
             <span className="text-foreground">JSB </span>
-            <span className="text-primary">Boxing </span>
-            <span className="text-foreground">Academy</span>
+            <span className="text-primary">BOXING </span>
+            <span className="text-foreground">ACADEMY</span>
           </div>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
@@ -49,8 +49,8 @@ export default function Header() {
                 <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={() => setIsMenuOpen(false)}>
                   <div className="font-headline">
                     <span className="text-foreground">JSB </span>
-                    <span className="text-primary">Boxing </span>
-                    <span className="text-foreground">Academy</span>
+                    <span className="text-primary">BOXING </span>
+                    <span className="text-foreground">ACADEMY</span>
                   </div>
                 </Link>
                 <nav className="flex flex-col gap-4">
