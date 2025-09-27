@@ -16,10 +16,7 @@ export default function AboutPreview() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">About JSB Boxing Academy</h2>
             <p className="text-muted-foreground">
-              JSB Boxing Academy was founded on a simple yet powerful belief: that the discipline and art of boxing can be a transformative force in a young person&apos;s life. We started in a borrowed space with a handful of gloves and an unwavering commitment to provide a positive outlet for the youth in our community.
-            </p>
-            <p className="text-muted-foreground">
-              Our vision is to create champions—not just in the ring, but in every aspect of their lives, fostering resilience, integrity, and a sense of belonging.
+              JSB Boxing Academy is a citizen-led, not-for-profit initiative founded by two brothers to give free boxing training to young girls and boys from nearby villages. Open to all, regardless of caste, creed, or religion, the academy is more than just a training ground — it’s a safe space where children learn discipline, confidence, and the courage to dream big.
             </p>
             <Button asChild size="lg" className="mt-4">
               <Link href="/about">
