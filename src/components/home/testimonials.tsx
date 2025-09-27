@@ -15,7 +15,7 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
-            Voices from Our Community
+            What Our Supporters Say
           </h2>
           <p className="mt-4 mx-auto text-lg text-muted-foreground">
             Hear what our members, parents, and supporters have to say.
