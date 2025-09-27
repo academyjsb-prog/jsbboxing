@@ -11,7 +11,7 @@ const involvementOptions = [
   {
     icon: <Heart className="h-8 w-8 text-primary" />,
     title: 'Donate',
-    description: 'Your financial support provides equipment, facilities, and opportunities for our young athletes.',
+    description: 'Your support covers training, equipment, nutrition, and more — helping kids chase their dreams.',
     buttonText: 'Donate Now',
     action: 'donate',
     content: {
@@ -20,25 +20,25 @@ const involvementOptions = [
     }
   },
   {
-    icon: <Handshake className="h-8 w-8 text-primary" />,
-    title: 'Sponsor',
-    description: 'Become a corporate or individual sponsor to support our programs and gain visibility in the community.',
-    buttonText: 'Learn More',
-    action: 'sponsor',
-    content: {
-      title: 'Become a Sponsor',
-      description: 'Sponsoring JSB Boxing Academy is a unique opportunity to align your brand with a cause that builds champions. We offer various sponsorship packages that provide visibility at our events, on our website, and on social media. To discuss sponsorship opportunities, please email us at sponsor@jsboxing.com.'
-    }
-  },
-  {
     icon: <UserPlus className="h-8 w-8 text-primary" />,
     title: 'Volunteer',
-    description: 'Lend your time and skills as a mentor, tutor, or event helper. Your presence makes a huge difference.',
+    description: 'Give your time, guide, or simply cheer — your presence inspires our young boxers.',
     buttonText: 'Join Us',
     action: 'volunteer',
     content: {
       title: 'Volunteer With Us',
       description: 'We are always looking for passionate individuals to join our team. Whether you can help with coaching, tutoring, event organization, or administrative tasks, your contribution is invaluable. To get started, please send an email to volunteer@jsboxing.com with your availability and areas of interest.'
+    }
+  },
+  {
+    icon: <Handshake className="h-8 w-8 text-primary" />,
+    title: 'Share Your Skills',
+    description: 'Run a workshop or session — from boxing to life skills, every lesson empowers our kids.',
+    buttonText: 'Learn More',
+    action: 'share',
+    content: {
+      title: 'Share Your Skills',
+      description: 'If you have a skill to share, our children are eager to learn. From boxing techniques to financial literacy or public speaking, your knowledge can make a lasting impact. Please email us at volunteer@jsboxing.com to discuss how you can contribute.'
     }
   },
 ];
@@ -70,7 +70,7 @@ export default function GetInvolved() {
             <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
               Get Involved
             </h2>
-            <p className="mt-4 mx-auto text-base text-muted-foreground">
+            <p className="mt-4 mx-auto text-base text-muted-foreground font-body text-sm">
               There are many ways to support our mission and empower our youth.
             </p>
           </div>
@@ -84,7 +84,7 @@ export default function GetInvolved() {
                   <CardTitle className="mt-4 font-headline">{option.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
-                  <p className="text-muted-foreground text-sm flex-grow">{option.description}</p>
+                  <p className="text-muted-foreground font-body text-sm flex-grow">{option.description}</p>
                   <Button onClick={() => handleAction(option.action)} className="mt-6 w-full">
                     {option.buttonText}
                   </Button>
@@ -100,7 +100,7 @@ export default function GetInvolved() {
           <DialogContent>
             <DialogHeader>
               <DialogTitle className="font-headline text-2xl">{selectedOption.content.title}</DialogTitle>
-              <DialogDescription className="pt-4 text-base">
+              <DialogDescription className="pt-4 text-base font-body text-sm">
                 {selectedOption.content.description}
               </DialogDescription>
             </DialogHeader>
