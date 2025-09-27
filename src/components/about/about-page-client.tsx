@@ -42,6 +42,33 @@ export default function AboutPageClient() {
             <p className="text-muted-foreground">
               The academy provides completely free training to young girls and boys from villages and nearby communities, giving them access to facilities, mentorship, and opportunities that would otherwise be out of reach. At JSB, we welcome everyone — irrespective of caste, creed, or religion — because we believe talent has no boundaries.
             </p>
+             <p className="text-muted-foreground">
+              Over the years, JSB Boxing Academy has trained hundreds of children and young people from underprivileged backgrounds, many of whom have proudly represented India in national and international championships. For our students, the academy is not just a training ground, but a safe space where discipline, resilience, and hope are built every single day.
+            </p>
+            <p className="text-muted-foreground">
+              But we cannot do this alone. Your support matters. Every glove, every punch, every medal won is the result of a community standing together. By joining hands with us — as a supporter, donor, or volunteer — you can help a child dream bigger, fight harder, and achieve more.
+            </p>
+            <p className="text-muted-foreground">
+              Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond.
+            </p>
+            <p className="text-muted-foreground">
+              But we can’t do this alone. JSB Boxing Academy is citizen-led and open to all.
+            </p>
+            <p className="text-muted-foreground">
+              If you’re a boxer, coach, or trainer, you can come and share your skills.
+            </p>
+            <p className="text-muted-foreground">
+              If you want to run a free workshop, our children are eager to learn.
+            </p>
+            <p className="text-muted-foreground">
+              If you wish to donate or volunteer, your support will help us grow stronger.
+            </p>
+            <p className="text-muted-foreground">
+              At JSB, everyone has a role to play — because building champions is not the work of one person, but of an entire community standing together.
+            </p>
+             <p className="font-semibold text-foreground">
+              Join us in any way you can. Together, let’s fight for their dreams.
+            </p>
           </div>
         </div>
         
