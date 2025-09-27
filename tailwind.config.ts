@@ -19,7 +19,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-sans)'],
-        body: ['PT Sans', 'sans-serif'],
+        body: ['"Playfair Display"', 'serif'],
         headline: ['PT Sans', 'sans-serif'],
         playfair: ['"Playfair Display"', 'serif'],
       },

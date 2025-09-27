@@ -31,7 +31,7 @@ export default function Mission() {
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
             Why We Fight
           </h2>
-          <p className="mt-4 mx-auto text-base text-muted-foreground font-playfair">
+          <p className="mt-4 mx-auto text-base text-muted-foreground font-body">
             We fight not just inside the ring, but against poverty, inequality, and lost opportunities.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function Mission() {
                 <CardTitle className="mt-4 font-headline">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground font-playfair">{feature.description}</p>
+                <p className="text-muted-foreground font-body">{feature.description}</p>
               </CardContent>
             </Card>
           ))}
