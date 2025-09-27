@@ -53,7 +53,6 @@ export default function DonationDialog() {
       };
       getSuggestion();
     }
-  // The dependency array is intentionally empty to only run this once when the dialog opens.
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
