@@ -15,6 +15,7 @@ export default function DonationDialog() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [timeSpent, setTimeSpent] = useState(0);
+  const [hasFetched, setHasFetched] = useState(false);
 
   useEffect(() => {
     let interval: NodeJS.Timeout | undefined;
@@ -22,6 +23,11 @@ export default function DonationDialog() {
       interval = setInterval(() => {
         setTimeSpent(prev => prev + 1);
       }, 1000);
+    } else {
+      // Reset state when dialog closes
+      setHasFetched(false);
+      setTimeSpent(0);
+      setSuggestion(null);
     }
     return () => {
       if (interval) {
@@ -31,11 +37,12 @@ export default function DonationDialog() {
   }, [isOpen]);
 
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen && !hasFetched) {
       const getSuggestion = async () => {
         setIsLoading(true);
         setError(null);
         setSuggestion(null);
+        setHasFetched(true);
         try {
           const result = await personalizedDonationPrompt({
             timeSpent,
@@ -53,8 +60,7 @@ export default function DonationDialog() {
       };
       getSuggestion();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isOpen]);
+  }, [isOpen, hasFetched, timeSpent]);
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
