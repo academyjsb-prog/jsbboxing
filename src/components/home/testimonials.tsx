@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
@@ -18,7 +19,7 @@ export default function Testimonials() {
             What Our Supporters Say
           </h2>
           <p className="mt-4 mx-auto text-lg text-muted-foreground">
-            Hear what our members, parents, and supporters have to say.
+            The journey of JSB Boxing Academy is powered by people who believe in us. Their words of encouragement and trust keep us moving forward.
           </p>
         </div>
         <Carousel
