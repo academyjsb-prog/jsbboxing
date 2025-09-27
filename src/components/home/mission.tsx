@@ -32,7 +32,7 @@ export default function Mission() {
             Why We Fight
           </h2>
           <p className="mt-4 mx-auto text-lg text-muted-foreground">
-            We are a family, a support system, and a beacon of hope for the next generation.
+            We fight not just inside the ring, but against poverty, inequality, and lost opportunities.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
