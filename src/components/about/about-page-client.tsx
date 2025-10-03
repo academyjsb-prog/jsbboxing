@@ -9,7 +9,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function AboutPageClient() {
   const { openDonationDialog } = useDonation();
-  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-vision');
+  const aboutImage = PlaceHolderImages.find(img => img.id === 'vision-champions');
 
   return (
     <div className="bg-background text-foreground">

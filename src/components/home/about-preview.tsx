@@ -7,7 +7,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
 
 export default function AboutPreview() {
-  const aboutImage = PlaceHolderImages.find(img => img.id === 'gallery-3');
+  const aboutImage = PlaceHolderImages.find(img => img.id === 'vision-champions');
 
   return (
     <section className="py-12 md:py-20 bg-background">
