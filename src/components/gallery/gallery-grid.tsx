@@ -37,7 +37,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
               </div>
             </DialogTrigger>
             {selectedImage && selectedImage.id === image.id && (
-              <DialogContent className="max-w-5xl w-full h-auto bg-transparent border-0 flex items-center justify-center p-4">
+              <DialogContent className="max-w-5xl w-full h-auto">
                  <DialogHeader className="sr-only">
                     <DialogTitle>
                         <VisuallyHidden>{selectedImage.description}</VisuallyHidden>
@@ -52,7 +52,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   data-ai-hint={selectedImage.imageHint}
                   width={1200}
                   height={800}
-                  className="w-auto h-auto max-w-full max-h-[90vh] rounded-lg object-contain shadow-2xl"
+                  className="w-auto h-auto max-w-full max-h-[80vh] mx-auto rounded-lg object-contain"
                 />
               </DialogContent>
             )}
