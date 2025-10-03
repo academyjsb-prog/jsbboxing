@@ -45,8 +45,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
               <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-                <BoxingGloveIcon className="h-8 w-8 text-primary" />
-                <span className="font-headline">JSB Boxing Academy</span>
+                 <div className="font-headline">
+                    <span className="text-foreground">JSB </span>
+                    <span className="text-primary">BOXING </span>
+                    <span className="text-foreground">ACADEMY</span>
+                  </div>
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
                 JSB Boxing Academy is a citizen-led, not-for-profit initiative providing free boxing training to children from villages. Open to all, we build confidence, discipline, and dreams beyond the ring.
@@ -73,6 +76,7 @@ export default function Footer() {
                   <Link href="/about" className="text-muted-foreground transition hover:text-primary">Our Mission</Link>
                   <Link href="/about" className="text-muted-foreground transition hover:text-primary">The Team</Link>
                   <Link href="/gallery" className="text-muted-foreground transition hover:text-primary">Gallery</Link>
+                   <Link href="/contact" className="text-muted-foreground transition hover:text-primary">Contact</Link>
                 </nav>
               </div>
               <div className="text-center sm:text-left">
@@ -96,7 +100,14 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} JSB Boxing Academy. All rights reserved.</p>
+             <div className="text-sm text-muted-foreground">
+              <p className="font-bold">JSB Boxing Academy</p>
+              <p>Registered under [Society/Trust Act Name], Reg. No.: 12345</p>
+              <p>FCRA No.: XYZ/FCRA/6789 | 80G Tax Exemption: Available</p>
+              <p>Address: 123 Boxing Lane, Banaras, Uttar Pradesh – 221001, India</p>
+              <p>Email: info@jsbboxingacademy.org | Phone: +91 98765 43210</p>
+            </div>
+            <p className='mt-4'>&copy; {new Date().getFullYear()} JSB Boxing Academy. All rights reserved.</p>
           </div>
         </div>
       </footer>
