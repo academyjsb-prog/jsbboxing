@@ -3,8 +3,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { galleryImages } from '@/lib/data';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 export default function GalleryGrid() {
   const [selectedImage, setSelectedImage] = useState<ImagePlaceholder | null>(null);
@@ -33,6 +34,14 @@ export default function GalleryGrid() {
             </DialogTrigger>
             {selectedImage && selectedImage.id === image.id && (
               <DialogContent className="max-w-4xl p-0 border-0">
+                 <DialogHeader>
+                    <DialogTitle>
+                        <VisuallyHidden>{selectedImage.description}</VisuallyHidden>
+                    </DialogTitle>
+                    <DialogDescription>
+                         <VisuallyHidden>A larger view of the gallery image: {selectedImage.description}</VisuallyHidden>
+                    </DialogDescription>
+                </DialogHeader>
                 <Image
                   src={selectedImage.imageUrl}
                   alt={selectedImage.description}
