@@ -9,31 +9,31 @@
     {
       "id": "gallery-1",
       "description": "Two young female boxers in the ring with officials.",
-      "imageUrl": "/gallery/1.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1594242784884-56c47b0a1843?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxib3hpbmclMjBtYXRjaHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "boxing match"
     },
     {
       "id": "gallery-2",
       "description": "Two boxers sparring in a ring.",
-      "imageUrl": "/gallery/2.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1541251323495-871b69f4431a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib3hlciUyMHNwYXJyaW5nfGVufDB8fHx8MTc1ODcwMzQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "boxer sparring"
     },
     {
       "id": "gallery-3",
       "description": "A coach giving instructions to a young boxer.",
-      "imageUrl": "/gallery/3.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1620023616238-a1555239121c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxib3hpbmclMjBjb2FjaHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "boxing coach"
     },
     {
       "id": "gallery-4",
       "description": "Close-up of boxing gloves.",
-      "imageUrl": "/gallery/4.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1599599810694-b5b37304c531?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3hpbmclMjBnbG92ZXN8ZW58MHx8fHwxNzU4NzA2NzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "boxing gloves"
     },
     {
       "id": "gallery-5",
       "description": "A boxer celebrating a victory.",
-      "imageUrl": "/gallery/5.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1614695029302-73c3339f1367?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib3hlciUyMHZpY3Rvcnl8ZW58MHx8fHwxNzU4NzA2NzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "boxer victory"
     },
     {
@@ -45,19 +45,19 @@
     {
       "id": "gallery-6",
       "description": "A group of young boxers in training.",
-      "imageUrl": "/gallery/6.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1579492450034-bede17145e1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib3hpbmclMjBjbGFzc3xlbnwwfHx8fDE3NTg3MDY3MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "boxing class"
     },
     {
       "id": "gallery-7",
       "description": "A boxer doing jump rope exercises.",
-      "imageUrl": "/gallery/7.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1547483238-f400e65cce3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3hlciUyMHdvcmtvdXR8ZW58MHx8fHwxNzU4NzA2NzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "boxer workout"
     },
     {
       "id": "gallery-8",
       "description": "Portrait of a focused female boxer.",
-      "imageUrl": "/gallery/8.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1588691523709-a3452b415e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBib3hlcnxlbnwwfHx8fDE3NTg3MDY3MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "female boxer"
     },
     {
@@ -105,13 +105,13 @@
     {
       "id": "testimonial-2",
       "description": "Portrait of a parent.",
-      "imageUrl": "https://images.unsplash.com/photo-1542644416-2289c587843e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542644416-2289c587843e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "parent portrait"
     },
     {
       "id": "testimonial-3",
       "description": "Portrait of a mentor.",
-      "imageUrl": "https://images.unsplash.com/photo-1515935909408-1c723370b5e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1515935909408-1c723370b5e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mentor portrait"
     }
   ]
