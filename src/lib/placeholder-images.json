@@ -3,7 +3,7 @@
     {
       "id": "hero-boxing",
       "description": "A dramatic shot of a boxer wrapping their hands before a fight.",
-      "imageUrl": "https://images.unsplash.com/photo-1636391134068-083dd5e3209b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym94aW5nJTIwcmluZ3xlbnwwfHx8fDE3NTg2NTI0Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/custom-1.jpg",
       "imageHint": "boxing ring"
     },
     {
@@ -63,55 +63,55 @@
     {
       "id": "team-1",
       "description": "Profile picture of the head coach.",
-      "imageUrl": "https://images.unsplash.com/photo-1715029005043-e88d219a3c48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-1.jpg",
       "imageHint": "man portrait"
     },
     {
       "id": "team-2",
       "description": "Profile picture of a trainer.",
-      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODY0MDczOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-2.jpg",
       "imageHint": "woman portrait"
     },
     {
       "id": "team-3",
       "description": "Profile picture of a senior fighter.",
-      "imageUrl": "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg2OTE2MTR8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-3.jpg",
       "imageHint": "person portrait"
     },
     {
       "id": "team-4",
       "description": "Profile picture of a trainer.",
-      "imageUrl": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBwcm9maWxlfGVufDB8fHx8MTc1ODcwMDgxNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-4.jpg",
       "imageHint": "man profile"
     },
     {
       "id": "team-5",
       "description": "Profile picture of a youth fighter.",
-      "imageUrl": "https://images.unsplash.com/photo-1529995049601-ef63465a463f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3b21hbiUyMHByb2ZpbGV8ZW58MHx8fHwxNzU4Njg4NTgzfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-5.jpg",
       "imageHint": "woman profile"
     },
     {
       "id": "team-6",
       "description": "Profile picture of a founder.",
-      "imageUrl": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwZXJzb24lMjBwcm9maWxlfGVufDB8fHx8MTc1ODU4NzI3OXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-6.jpg",
       "imageHint": "person profile"
     },
     {
       "id": "testimonial-1",
       "description": "Portrait of a young boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1710478122325-727f1a4c93aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b3VuZyUyMGJveGVyfGVufDB8fHx8MTc1ODcwMzQ3MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/testimonial-1.jpg",
       "imageHint": "young boxer"
     },
     {
       "id": "testimonial-2",
       "description": "Portrait of a parent.",
-      "imageUrl": "https://images.unsplash.com/photo-1542644416-2289c587843e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/testimonial-2.jpg",
       "imageHint": "parent portrait"
     },
     {
       "id": "testimonial-3",
       "description": "Portrait of a mentor.",
-      "imageUrl": "https://images.unsplash.com/photo-1515935909408-1c723370b5e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/testimonial-3.jpg",
       "imageHint": "mentor portrait"
     }
   ]
