@@ -8,7 +8,7 @@
     },
     {
       "id": "gallery-1",
-      "description": "A group of young boxers in training.",
+      "description": "Two young boxers and officials in the ring after a match.",
       "imageUrl": "https://storage.googleapis.com/aif-stg-build-01-images/public/c13a3036-7c90-4c31-b847-f37b98d28a39.png",
       "imageHint": "boxing championship"
     },
@@ -99,7 +99,7 @@
     {
       "id": "testimonial-1",
       "description": "Portrait of a young boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1710478122325-727f1a4c93aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b3VuZyUyMGJveGVyfGVufDB8fHx8MTc1ODcwMzQ3MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1710478122325-727f1a4c93aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b3VuZyUyMGJveGVyfGVufDB8fHx8MTc1ODcwMzQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "young boxer"
     },
     {
