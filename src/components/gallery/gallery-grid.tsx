@@ -3,9 +3,12 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger, DialogClose } from '@/components/ui/dialog';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
+import { X } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/button';
 
 interface GalleryGridProps {
   images: ImagePlaceholder[];
@@ -37,7 +40,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
               </div>
             </DialogTrigger>
             {selectedImage && selectedImage.id === image.id && (
-              <DialogContent className="max-w-5xl w-full h-auto">
+              <DialogContent className="max-w-7xl w-full h-full bg-transparent border-0 p-0 flex justify-center items-center">
                  <DialogHeader className="sr-only">
                     <DialogTitle>
                         <VisuallyHidden>{selectedImage.description}</VisuallyHidden>
@@ -50,10 +53,17 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   src={selectedImage.imageUrl}
                   alt={selectedImage.description}
                   data-ai-hint={selectedImage.imageHint}
-                  width={1200}
-                  height={800}
-                  className="w-auto h-auto max-w-full max-h-[80vh] mx-auto rounded-lg object-contain"
+                  width={1920}
+                  height={1080}
+                  className="w-auto h-auto max-w-full max-h-full object-contain rounded-lg"
                 />
+                <DialogClose className={cn(
+                  buttonVariants({ variant: "ghost", size: "icon" }),
+                  "absolute top-4 right-4 h-10 w-10 rounded-full bg-black/50 text-white hover:bg-black/75 hover:text-white"
+                )}>
+                  <X className="h-6 w-6" />
+                  <span className="sr-only">Close</span>
+                </DialogClose>
               </DialogContent>
             )}
           </Dialog>
