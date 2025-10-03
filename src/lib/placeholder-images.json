@@ -3,115 +3,115 @@
     {
       "id": "hero-boxing",
       "description": "A dramatic shot of a boxer wrapping their hands before a fight.",
-      "imageUrl": "https://images.unsplash.com/photo-1664902148014-302becd9dc49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxib3hpbmclMjByaW5nfGVufDB8fHx8MTc1OTUxNDYwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/hero-boxing.jpg",
       "imageHint": "boxing ring"
     },
     {
       "id": "gallery-1",
       "description": "Two young boxers and officials in the ring after a match.",
-      "imageUrl": "https://images.unsplash.com/photo-1564097147829-44f8c74a8549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib3hpbmclMjBjaGFtcGlvbnNoaXB8ZW58MHx8fHwxNzU5NTE0NjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/gallery-1.jpg",
       "imageHint": "boxing championship"
     },
     {
       "id": "gallery-2",
       "description": "Two boxers sparring in a ring.",
-      "imageUrl": "https://images.unsplash.com/photo-1620123303019-0e9b3bd1721b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym94ZXIlMjBzcGFycmluZ3xlbnwwfHx8fDE3NTk1MDQ4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/gallery-2.jpg",
       "imageHint": "boxer sparring"
     },
     {
       "id": "gallery-3",
       "description": "A coach giving instructions to a young boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1729673517238-45dc6a108726?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib3hpbmclMjBjb2FjaHxlbnwwfHx8fDE3NTk0Mzk4NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/gallery-3.jpg",
       "imageHint": "boxing coach"
     },
     {
       "id": "gallery-4",
       "description": "Close-up of boxing gloves.",
-      "imageUrl": "https://images.unsplash.com/photo-1672589008772-4f22acf38f6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxib3hpbmclMjBnbG92ZXN8ZW58MHx8fHwxNzU5NDc1MjY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/gallery-4.jpg",
       "imageHint": "boxing gloves"
     },
     {
       "id": "gallery-5",
       "description": "A boxer celebrating a victory.",
-      "imageUrl": "https://images.unsplash.com/photo-1586204723173-94e043453715?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib3hlciUyMHZpY3Rvcnl8ZW58MHx8fHwxNzU5NTA0ODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/gallery-5.jpg",
       "imageHint": "boxer victory"
     },
     {
       "id": "vision-champions",
       "description": "Coaches and young boxers posing together at a national championship event.",
-      "imageUrl": "https://images.unsplash.com/photo-1724529798256-874fbf79488c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib3hpbmclMjBjaGFtcGlvbnNoaXB8ZW58MHx8fHwxNzU5NTE0NjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "boxing championship"
+      "imageUrl": "/gallery/vision-champions.jpg",
+      "imageHint": "boxing team"
     },
     {
       "id": "gallery-6",
       "description": "A group of young boxers in training.",
-      "imageUrl": "https://images.unsplash.com/photo-1620123449238-abaeff62d48d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxib3hpbmclMjBjbGFzc3xlbnwwfHx8fDE3NTk0Mzk4NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/gallery-6.jpg",
       "imageHint": "boxing class"
     },
     {
       "id": "gallery-7",
       "description": "A boxer doing jump rope exercises.",
-      "imageUrl": "https://images.unsplash.com/photo-1734191674534-5840c0c735e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxib3hlciUyMHdvcmtvdXR8ZW58MHx8fHwxNzU5NTA0ODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/gallery-7.jpg",
       "imageHint": "boxer workout"
     },
     {
       "id": "gallery-8",
       "description": "Portrait of a focused female boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1622599504752-14e0a7eba919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmZW1hbGUlMjBib3hlcnxlbnwwfHx8fDE3NTk1MDQ4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/gallery-8.jpg",
       "imageHint": "female boxer"
     },
     {
       "id": "team-1",
       "description": "Profile picture of the head coach.",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk0NzE4Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-1.jpg",
       "imageHint": "man portrait"
     },
     {
       "id": "team-2",
       "description": "Profile picture of a trainer.",
-      "imageUrl": "https://images.unsplash.com/photo-1593351799227-75df2026356b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1OTM5NjU1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-2.jpg",
       "imageHint": "woman portrait"
     },
     {
       "id": "team-3",
       "description": "Profile picture of a senior fighter.",
-      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzU5NTA2NjMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-3.jpg",
       "imageHint": "person portrait"
     },
     {
       "id": "team-4",
       "description": "Profile picture of a trainer.",
-      "imageUrl": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYW4lMjBwcm9maWxlfGVufDB8fHx8MTc1OTQ4OTUyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-4.jpg",
       "imageHint": "man profile"
     },
     {
       "id": "team-5",
       "description": "Profile picture of a youth fighter.",
-      "imageUrl": "https://images.unsplash.com/photo-1529995049601-ef63465a463f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHByb2ZpbGV8ZW58MHx8fHwxNzU5NTA3NDkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-5.jpg",
       "imageHint": "woman profile"
     },
     {
       "id": "team-6",
       "description": "Profile picture of a founder.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb24lMjBwcm9maWxlfGVufDB8fHx8MTc1OTQ3NjgwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/team-6.jpg",
       "imageHint": "person profile"
     },
     {
       "id": "testimonial-1",
       "description": "Portrait of a young boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1710478122298-f9e4d96308ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx5b3VuZyUyMGJveGVyfGVufDB8fHx8MTc1OTUxNDYwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/testimonial-1.jpg",
       "imageHint": "young boxer"
     },
     {
       "id": "testimonial-2",
       "description": "Portrait of a parent.",
-      "imageUrl": "https://images.unsplash.com/photo-1542644416-2289c587843e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXJlbnQlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk0OTQzODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/testimonial-2.jpg",
       "imageHint": "parent portrait"
     },
     {
       "id": "testimonial-3",
       "description": "Portrait of a mentor.",
-      "imageUrl": "https://images.unsplash.com/photo-1751576027223-5880cadd5145?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1MTQ2MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/testimonial-3.jpg",
       "imageHint": "mentor portrait"
     }
   ]
