@@ -9,31 +9,31 @@
     {
       "id": "gallery-1",
       "description": "Two young female boxers in the ring with officials.",
-      "imageUrl": "https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxib3hpbmclMjBtYXRjaHxlbnwwfHx8fDE3NTk0NDAwNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/1.jpg",
       "imageHint": "boxing match"
     },
     {
       "id": "gallery-2",
       "description": "Two boxers sparring in a ring.",
-      "imageUrl": "https://images.unsplash.com/photo-1620123303869-636299618c72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxib3hlciUyMHNwYXJyaW5nfGVufDB8fHx8MTc1OTUwNDg4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/2.jpg",
       "imageHint": "boxer sparring"
     },
     {
       "id": "gallery-3",
       "description": "A coach giving instructions to a young boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1729673517191-313e2f91608a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym94aW5nJTIwY29hY2h8ZW58MHx8fHwxNzU5NDM5ODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/3.jpg",
       "imageHint": "boxing coach"
     },
     {
       "id": "gallery-4",
       "description": "Close-up of boxing gloves.",
-      "imageUrl": "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib3hpbmclMjBnbG92ZXN8ZW58MHx8fHwxNzU5NDc1MjY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/4.jpg",
       "imageHint": "boxing gloves"
     },
     {
       "id": "gallery-5",
       "description": "A boxer celebrating a victory.",
-      "imageUrl": "https://images.unsplash.com/photo-1724529798256-874fbf79488c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxib3hlciUyMHZpY3Rvcnl8ZW58MHx8fHwxNzU5NTA0ODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/5.jpg",
       "imageHint": "boxer victory"
     },
     {
@@ -45,19 +45,19 @@
     {
       "id": "gallery-6",
       "description": "A group of young boxers in training.",
-      "imageUrl": "https://images.unsplash.com/photo-1561532325-7d5231a2dede?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym94aW5nJTIwY2xhc3N8ZW58MHx8fHwxNzU5NDM5ODUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/6.jpg",
       "imageHint": "boxing class"
     },
     {
       "id": "gallery-7",
       "description": "A boxer doing jump rope exercises.",
-      "imageUrl": "https://images.unsplash.com/photo-1602506082559-35c3633707c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib3hlciUyMHdvcmtvdXR8ZW58MHx8fHwxNzU5NTA0ODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/7.jpg",
       "imageHint": "boxer workout"
     },
     {
       "id": "gallery-8",
       "description": "Portrait of a focused female boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1580983694176-b6b4e3e010a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmZW1hbGUlMjBib3hlcnxlbnwwfHx8fDE3NTk1MDQ4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/8.jpg",
       "imageHint": "female boxer"
     },
     {
