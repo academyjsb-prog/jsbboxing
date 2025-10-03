@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import { socialLinks } from '@/lib/data';
-import { BoxingGloveIcon } from '@/components/shared/icons';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { useDonation } from '@/context/donation-context';
@@ -42,8 +41,8 @@ export default function Footer() {
     <>
       <footer className="bg-card text-card-foreground border-t">
         <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-            <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
+            <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:col-span-1">
               <Link href="/" className="flex items-center gap-2 text-xl font-bold">
                  <div className="font-headline">
                     <span className="text-foreground">JSB </span>
@@ -52,7 +51,7 @@ export default function Footer() {
                   </div>
               </Link>
               <p className="mt-4 text-sm text-muted-foreground">
-                JSB Boxing Academy is a citizen-led, not-for-profit initiative providing free boxing training to children from villages. Open to all, we build confidence, discipline, and dreams beyond the ring.
+                JSB Boxing Academy is a citizen-led, not-for-profit initiative providing free boxing training to children from villages.
               </p>
               <div className="mt-6 flex gap-4">
                 {socialLinks.map((link) => (
@@ -69,45 +68,44 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-3 lg:col-span-3">
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium">About Us</p>
-                <nav className="mt-4 flex flex-col space-y-2 text-sm">
-                  <Link href="/about" className="text-muted-foreground transition hover:text-primary">Our Mission</Link>
-                  <Link href="/about" className="text-muted-foreground transition hover:text-primary">The Team</Link>
-                  <Link href="/gallery" className="text-muted-foreground transition hover:text-primary">Gallery</Link>
-                   <Link href="/contact" className="text-muted-foreground transition hover:text-primary">Contact</Link>
-                </nav>
+                <p className="text-lg font-medium">Contact & Legal</p>
+                <div className="mt-4 flex flex-col space-y-2 text-sm text-muted-foreground">
+                    <p><strong>Address:</strong> 123 Boxing Lane, Banaras, Uttar Pradesh – 221001, India</p>
+                    <p><strong>Email:</strong> info@jsbboxingacademy.org</p>
+                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p className="pt-2"><strong>Reg. No.:</strong> 12345</p>
+                    <p><strong>FCRA No.:</strong> XYZ/FCRA/6789</p>
+                    <p>80G Tax Exemption: Available</p>
+                </div>
               </div>
               <div className="text-center sm:text-left">
+                <p className="text-lg font-medium">Bank Details</p>
+                <div className="mt-4 flex flex-col space-y-2 text-sm text-muted-foreground">
+                  <p><strong>Account Name:</strong> JAISIDHBABA BOXING ACADEMY FEDERATION</p>
+                  <p><strong>Account No.:</strong> 50200065755352</p>
+                  <p><strong>Bank:</strong> HDFC Bank, Sector 18, Noida</p>
+                  <p><strong>IFSC Code:</strong> HDFC0000088</p>
+                  <p><strong>UPI ID / QR:</strong> यूपीआई@HDFC</p>
+                </div>
+              </div>
+               <div className="text-center sm:text-left">
                 <p className="text-lg font-medium">Get Involved</p>
                 <nav className="mt-4 flex flex-col space-y-2 text-sm">
                   <button onClick={openDonationDialog} className="text-left text-muted-foreground transition hover:text-primary">Donate</button>
                   <button onClick={() => handleSupportClick('volunteer')} className="text-left text-muted-foreground transition hover:text-primary">Volunteer</button>
                   <button onClick={() => handleSupportClick('share')} className="text-left text-muted-foreground transition hover:text-primary">Share Your Skills</button>
+                  <Link href="/about" className="text-muted-foreground transition hover:text-primary pt-2">Our Mission</Link>
+                  <Link href="/gallery" className="text-muted-foreground transition hover:text-primary">Gallery</Link>
                 </nav>
-              </div>
-              <div className="text-center sm:text-left">
-                <p className="text-lg font-medium">Newsletter</p>
-                <p className="mt-4 text-sm text-muted-foreground">
-                  Stay up to date with our latest news and events.
-                </p>
-                <form className="mt-4 flex max-w-md gap-2">
-                  <Input type="email" placeholder="Enter your email" className="w-full" />
-                  <Button type="submit" variant="default">Subscribe</Button>
-                </form>
               </div>
             </div>
           </div>
           <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
              <div className="text-sm text-muted-foreground">
-              <p className="font-bold">JSB Boxing Academy</p>
-              <p>Registered under [Society/Trust Act Name], Reg. No.: 12345</p>
-              <p>FCRA No.: XYZ/FCRA/6789 | 80G Tax Exemption: Available</p>
-              <p>Address: 123 Boxing Lane, Banaras, Uttar Pradesh – 221001, India</p>
-              <p>Email: info@jsbboxingacademy.org | Phone: +91 98765 43210</p>
+              <p>&copy; {new Date().getFullYear()} JSB Boxing Academy. All rights reserved.</p>
             </div>
-            <p className='mt-4'>&copy; {new Date().getFullYear()} JSB Boxing Academy. All rights reserved.</p>
           </div>
         </div>
       </footer>
