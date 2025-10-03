@@ -1,19 +1,23 @@
+
 'use client';
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { galleryImages } from '@/lib/data';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
-export default function GalleryGrid() {
+interface GalleryGridProps {
+  images: ImagePlaceholder[];
+}
+
+export default function GalleryGrid({ images }: GalleryGridProps) {
   const [selectedImage, setSelectedImage] = useState<ImagePlaceholder | null>(null);
 
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {galleryImages.map((image) => (
+        {images.map((image) => (
           <Dialog key={image.id} onOpenChange={(isOpen) => { if (!isOpen) setSelectedImage(null) }}>
             <DialogTrigger asChild onClick={() => setSelectedImage(image)}>
               <div className="group relative aspect-square overflow-hidden rounded-lg cursor-pointer shadow-md">

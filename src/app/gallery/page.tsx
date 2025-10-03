@@ -1,4 +1,5 @@
-import GalleryGrid from '@/components/gallery/gallery-grid';
+
+import GalleryPageClient from '@/components/gallery/gallery-page-client';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function GalleryPage() {
         </div>
         
         <div className="mb-20">
-          <GalleryGrid />
+          <GalleryPageClient />
         </div>
       </div>
     </div>
