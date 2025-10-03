@@ -51,8 +51,6 @@ export const teamMembers = [
   },
 ];
 
-export const galleryImages: ImagePlaceholder[] = [];
-
 export const testimonials = [
   {
     name: 'Aarav Sharma',
