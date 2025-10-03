@@ -37,7 +37,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
               </div>
             </DialogTrigger>
             {selectedImage && selectedImage.id === image.id && (
-              <DialogContent className="max-w-4xl p-0 border-0">
+              <DialogContent className="max-w-4xl border-0">
                  <DialogHeader>
                     <DialogTitle>
                         <VisuallyHidden>{selectedImage.description}</VisuallyHidden>
