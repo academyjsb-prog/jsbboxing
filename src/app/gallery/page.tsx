@@ -1,14 +1,12 @@
 
 import GalleryPageClient from '@/components/gallery/gallery-page-client';
 import { Metadata } from 'next';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
   title: 'Gallery | JSB Boxing Academy',
 };
 
 export default function GalleryPage() {
-  const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-'));
   return (
     <div className="bg-background text-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
@@ -20,7 +18,7 @@ export default function GalleryPage() {
         </div>
         
         <div className="mb-20">
-          <GalleryPageClient images={galleryImages} />
+          <GalleryPageClient />
         </div>
       </div>
     </div>
