@@ -33,7 +33,7 @@
     {
       "id": "gallery-5",
       "description": "A boxer celebrating a victory.",
-      "imageUrl": "https://images.unsplash.com/photo-1486215397028-cb4f31efea3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib3hlciUyMHZpY3Rvcnl8ZW58MHx8fHwxNzU5NTA0ODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/5.png?updatedAt=1759520792328",
       "imageHint": "boxer victory"
     },
     {
@@ -45,20 +45,134 @@
     {
       "id": "gallery-6",
       "description": "A group of young boxers in training.",
-      "imageUrl": "https://images.unsplash.com/photo-1620123082893-327fbdecd79f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxib3hpbmclMjBjbGFzc3xlbnwwfHx8fDE3NTk0Mzk4NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/6.png?updatedAt=1759520792310",
       "imageHint": "boxing class"
     },
     {
       "id": "gallery-7",
       "description": "A boxer doing jump rope exercises.",
-      "imageUrl": "https://images.unsplash.com/photo-1579191204609-7334df4afc33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym94ZXIlMjB3b3Jrb3V0fGVufDB8fHx8MTc1OTUwNDg4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/7.png?updatedAt=1759520789396",
       "imageHint": "boxer workout"
     },
     {
       "id": "gallery-8",
       "description": "Portrait of a focused female boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1622599511051-16f55a1234d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmZW1hbGUlMjBib3hlcnxlbnwwfHx8fDE3NTk1MDQ4ODh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/8.png?updatedAt=1759520784593",
       "imageHint": "female boxer"
+    },
+    {
+      "id": "gallery-9",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/9.png?updatedAt=1759520791972",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-10",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/10.png?updatedAt=1759520792248",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-11",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/11.png?updatedAt=1759520790885",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-12",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/12.png?updatedAt=1759520791174",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-13",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/13.png?updatedAt=1759520791200",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-14",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/14.png?updatedAt=1759520791407",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-15",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/15.png?updatedAt=1759520790256",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-16",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/16.png?updatedAt=1759520792310",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-17",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/17.png?updatedAt=1759520792237",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-18",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/18.png?updatedAt=1759520792493",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-19",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/19.png?updatedAt=1759520791958",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-20",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/20.png?updatedAt=1759520792298",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-21",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/21.png?updatedAt=1759520791304",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-22",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/22.png?updatedAt=1759520792300",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-23",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/23.png?updatedAt=1759520790691",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-24",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/24.png?updatedAt=1759520791604",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-25",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/25.png?updatedAt=1759520790946",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-26",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/26.png?updatedAt=1759520791956",
+      "imageHint": "boxing action"
+    },
+    {
+      "id": "gallery-27",
+      "description": "A new gallery image.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/27.png?updatedAt=1759520790221",
+      "imageHint": "boxing action"
     },
     {
       "id": "team-1",
