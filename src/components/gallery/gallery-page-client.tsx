@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { listAll, getDownloadURL, ref } from 'firebase/storage';
 import { storage } from '@/lib/firebase';
 import GalleryGrid from '@/components/gallery/gallery-grid';
-import ImageUploader from '@/components/gallery/image-uploader';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 
@@ -46,10 +45,6 @@ export default function GalleryPageClient() {
 
   return (
     <div>
-      <div className="mb-12">
-        <ImageUploader onUploadSuccess={fetchImages} />
-      </div>
-
       {isLoading && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {Array.from({ length: 8 }).map((_, i) => (
@@ -65,7 +60,7 @@ export default function GalleryPageClient() {
       {!isLoading && !error && (
         <>
           {images.length === 0 ? (
-            <p className="text-center text-muted-foreground">The gallery is empty. Upload an image to get started.</p>
+            <p className="text-center text-muted-foreground">The gallery is currently empty.</p>
           ) : (
             <GalleryGrid images={images} />
           )}
