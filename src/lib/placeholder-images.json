@@ -9,55 +9,55 @@
     {
       "id": "gallery-1",
       "description": "Two young boxers and officials in the ring after a match.",
-      "imageUrl": "https://storage.googleapis.com/aif-stg-build-01-images/public/c13a3036-7c90-4c31-b847-f37b98d28a39.png",
+      "imageUrl": "/gallery/custom-1.jpg",
       "imageHint": "boxing championship"
     },
     {
       "id": "gallery-2",
       "description": "Two boxers sparring in a ring.",
-      "imageUrl": "https://images.unsplash.com/photo-1541251323495-871b69f4431a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxib3hlciUyMHNwYXJyaW5nfGVufDB8fHx8MTc1ODcwMzQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/custom-2.jpg",
       "imageHint": "boxer sparring"
     },
     {
       "id": "gallery-3",
       "description": "A coach giving instructions to a young boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1620023616238-a1555239121c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxib3hpbmclMjBjb2FjaHxlbnwwfHx8fDE3NTg3MDM0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/custom-3.jpg",
       "imageHint": "boxing coach"
     },
     {
       "id": "gallery-4",
       "description": "Close-up of boxing gloves.",
-      "imageUrl": "https://images.unsplash.com/photo-1599599810694-b5b37304c531?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3hpbmclMjBnbG92ZXN8ZW58MHx8fHwxNzU4NzA2NzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/custom-4.jpg",
       "imageHint": "boxing gloves"
     },
     {
       "id": "gallery-5",
       "description": "A boxer celebrating a victory.",
-      "imageUrl": "https://images.unsplash.com/photo-1614695029302-73c3339f1367?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib3hlciUyMHZpY3Rvcnl8ZW58MHx8fHwxNzU4NzA2NzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/custom-5.jpg",
       "imageHint": "boxer victory"
     },
     {
       "id": "vision-champions",
       "description": "Coaches and young boxers posing together at a national championship event.",
-      "imageUrl": "https://storage.googleapis.com/aif-stg-build-01-images/public/c13a3036-7c90-4c31-b847-f37b98d28a39.png",
+      "imageUrl": "/gallery/custom-6.jpg",
       "imageHint": "boxing championship"
     },
     {
       "id": "gallery-6",
       "description": "A group of young boxers in training.",
-      "imageUrl": "https://images.unsplash.com/photo-1579492450034-bede17145e1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxib3hpbmclMjBjbGFzc3xlbnwwfHx8fDE3NTg3MDY3MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/custom-7.jpg",
       "imageHint": "boxing class"
     },
     {
       "id": "gallery-7",
       "description": "A boxer doing jump rope exercises.",
-      "imageUrl": "https://images.unsplash.com/photo-1547483238-f400e65cce3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3hlciUyMHdvcmtvdXR8ZW58MHx8fHwxNzU4NzA2NzMxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/custom-8.jpg",
       "imageHint": "boxer workout"
     },
     {
       "id": "gallery-8",
       "description": "Portrait of a focused female boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1588691523709-a3452b415e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZW1hbGUlMjBib3hlcnxlbnwwfHx8fDE3NTg3MDY3MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/gallery/custom-9.jpg",
       "imageHint": "female boxer"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "testimonial-1",
       "description": "Portrait of a young boxer.",
-      "imageUrl": "https://images.unsplash.com/photo-1710478122325-727f1a4c93aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b3VuZyUyMGJveGVyfGVufDB8fHx8MTc1ODcwMzQ3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1710478122325-727f1a4c93aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b3VuZyUyMGJveGVyfGVufDB8fHx8MTc1ODcwMzQ3MXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "young boxer"
     },
     {
