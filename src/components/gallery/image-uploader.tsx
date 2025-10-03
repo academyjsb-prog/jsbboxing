@@ -2,7 +2,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { ref, uploadBytes } from 'firebase/storage';
 import { storage } from '@/lib/firebase';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -47,6 +47,9 @@ export default function ImageUploader({ onUploadSuccess }: ImageUploaderProps) {
       });
       
       setFile(null); // Reset file input
+      if (document.getElementById('file-input')) {
+        (document.getElementById('file-input') as HTMLInputElement).value = '';
+      }
       onUploadSuccess(); // Refresh the gallery
     } catch (error) {
       console.error('Upload error:', error);
@@ -68,7 +71,7 @@ export default function ImageUploader({ onUploadSuccess }: ImageUploaderProps) {
         </CardHeader>
         <CardContent>
             <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Input type="file" onChange={handleFileChange} accept="image/*" className="flex-grow" />
+            <Input id="file-input" type="file" onChange={handleFileChange} accept="image/*" className="flex-grow" />
             <Button onClick={handleUpload} disabled={isUploading || !file} className="w-full sm:w-auto">
                 {isUploading ? (
                 <Loader2 className="animate-spin" />

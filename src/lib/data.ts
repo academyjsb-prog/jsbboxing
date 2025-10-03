@@ -1,6 +1,7 @@
 
 import { Facebook, Instagram, Youtube } from 'lucide-react';
 import placeholderData from './placeholder-images.json';
+import type { ImagePlaceholder } from './placeholder-images';
 
 export const navLinks = [
   { href: '/', label: 'Home' },
@@ -50,7 +51,7 @@ export const teamMembers = [
   },
 ];
 
-export const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-'));
+export const galleryImages: ImagePlaceholder[] = [];
 
 export const testimonials = [
   {

@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { listAll, ref, getDownloadURL } from 'firebase/storage';
 import { storage } from '@/lib/firebase';
 import GalleryGrid from '@/components/gallery/gallery-grid';
@@ -14,7 +14,7 @@ export default function GalleryPageClient() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchImages = async () => {
+  const fetchImages = useCallback(async () => {
     setIsLoading(true);
     setError(null);
     try {
@@ -31,18 +31,18 @@ export default function GalleryPageClient() {
           };
         })
       );
-      setImages(urls);
+      setImages(urls.reverse()); // Show newest images first
     } catch (err) {
       console.error('Error fetching images:', err);
       setError('Failed to load images from the gallery. Please try again later.');
     } finally {
       setIsLoading(false);
     }
-  };
+  }, []);
 
   useEffect(() => {
     fetchImages();
-  }, []);
+  }, [fetchImages]);
 
   return (
     <div>
@@ -57,7 +57,15 @@ export default function GalleryPageClient() {
         </div>
       )}
       {error && <p className="text-center text-destructive">{error}</p>}
-      {!isLoading && !error && <GalleryGrid images={images} />}
+      {!isLoading && !error && (
+        <>
+          {images.length === 0 ? (
+            <p className="text-center text-muted-foreground">The gallery is empty. Be the first to upload an image!</p>
+          ) : (
+            <GalleryGrid images={images} />
+          )}
+        </>
+      )}
     </div>
   );
 }

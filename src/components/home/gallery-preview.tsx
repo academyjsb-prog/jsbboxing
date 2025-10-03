@@ -1,13 +1,14 @@
+
 'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { galleryImages } from '@/lib/data';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 export default function GalleryPreview() {
-  const previewImages = galleryImages.slice(0, 4);
+  const previewImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-')).slice(0, 4);
 
   return (
     <section className="py-12 md:py-20 bg-background">
