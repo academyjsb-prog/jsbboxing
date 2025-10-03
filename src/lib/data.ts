@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Youtube } from 'lucide-react';
-import { PlaceHolderImages } from './placeholder-images';
+import placeholderData from './placeholder-images.json';
 
 export const navLinks = [
   { href: '/', label: 'Home' },
@@ -13,6 +13,8 @@ export const socialLinks = [
   { href: '#', icon: Instagram, label: 'Instagram' },
   { href: '#', icon: Youtube, label: 'YouTube' },
 ];
+
+const { placeholderImages: PlaceHolderImages } = placeholderData;
 
 export const teamMembers = [
   {
