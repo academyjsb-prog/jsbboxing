@@ -58,9 +58,6 @@ export default function AboutPageClient() {
             <p className="font-semibold text-foreground font-body">
                 Join us in any way you can. Together, let’s fight for their dreams.
             </p>
-            <Button size="lg" onClick={openDonationDialog} className="mt-4">
-              Support The Mission
-            </Button>
           </div>
         </div>
         
