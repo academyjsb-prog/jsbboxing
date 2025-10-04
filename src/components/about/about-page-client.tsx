@@ -48,20 +48,6 @@ export default function AboutPageClient() {
                 <p>
                     But we cannot do this alone. Your support matters. Every glove, every punch, every medal won is the result of a community standing together. By joining hands with us — as a supporter, donor, or volunteer — you can help a child dream bigger, fight harder, and achieve more.
                 </p>
-                 <p className="font-semibold text-foreground font-body">
-                    Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond.
-                </p>
-            </div>
-            <Button size="lg" onClick={openDonationDialog} className="mt-8">
-              Support The Mission
-            </Button>
-          </div>
-        </div>
-        
-        <div className="py-12 mb-12">
-          <div className="max-w-4xl mx-auto text-center">
-             <h2 className="text-3xl font-bold font-headline mb-4">Be Part of the Community</h2>
-             <div className="space-y-4 text-muted-foreground text-sm font-body">
                 <p>
                     JSB Boxing Academy is citizen-led and open to all. At JSB, everyone has a role to play — because building champions is not the work of one person, but of an entire community standing together.
                 </p>
@@ -70,13 +56,15 @@ export default function AboutPageClient() {
                     <li>If you want to run a free workshop, our children are eager to learn.</li>
                     <li>If you wish to donate or volunteer, your support will help us grow stronger.</li>
                 </ul>
-                <p className="font-semibold text-foreground pt-4 font-body">
-                    Join us in any way you can. Together, let’s fight for their dreams.
+                 <p className="font-semibold text-foreground font-body pt-4">
+                    Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond. Join us in any way you can. Together, let’s fight for their dreams.
                 </p>
-             </div>
+            </div>
+            <Button size="lg" onClick={openDonationDialog} className="mt-8">
+              Support The Mission
+            </Button>
           </div>
         </div>
-
 
         <div className="mt-20">
           <TeamSection />
