@@ -38,34 +38,32 @@ export default function AboutPageClient() {
              <p className="text-muted-foreground text-sm font-body">
               Over the years, JSB Boxing Academy has trained hundreds of children and young people from underprivileged backgrounds, many of whom have proudly represented India in national and international championships. For our students, the academy is not just a training ground, but a safe space where discipline, resilience, and hope are built every single day.
             </p>
-          </div>
-        </div>
-        
-        <div className="py-12 bg-card rounded-lg shadow-xl mb-12">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold font-headline mb-4">Our Impact and How You Can Help</h2>
-            <div className="space-y-4 text-muted-foreground text-sm font-body">
-                <p>
-                    But we cannot do this alone. Your support matters. Every glove, every punch, every medal won is the result of a community standing together. By joining hands with us — as a supporter, donor, or volunteer — you can help a child dream bigger, fight harder, and achieve more.
-                </p>
-                <p>
-                    JSB Boxing Academy is citizen-led and open to all. At JSB, everyone has a role to play — because building champions is not the work of one person, but of an entire community standing together.
-                </p>
-                <ul className="list-disc list-inside space-y-2 text-left md:text-center md:list-inside">
-                    <li>If you’re a boxer, coach, or trainer, you can come and share your skills.</li>
-                    <li>If you want to run a free workshop, our children are eager to learn.</li>
-                    <li>If you wish to donate or volunteer, your support will help us grow stronger.</li>
-                </ul>
-                 <p className="font-semibold text-foreground font-body pt-4">
-                    Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond. Join us in any way you can. Together, let’s fight for their dreams.
-                </p>
-            </div>
-            <Button size="lg" onClick={openDonationDialog} className="mt-8">
+            <p className="text-muted-foreground text-sm font-body">
+                But we cannot do this alone. Your support matters. Every glove, every punch, every medal won is the result of a community standing together. By joining hands with us — as a supporter, donor, or volunteer — you can help a child dream bigger, fight harder, and achieve more.
+            </p>
+            <p className="text-muted-foreground text-sm font-body">
+                Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond.
+            </p>
+            <p className="text-muted-foreground text-sm font-body">
+                But we can’t do this alone. JSB Boxing Academy is citizen-led and open to all.
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm font-body">
+                <li>If you’re a boxer, coach, or trainer, you can come and share your skills.</li>
+                <li>If you want to run a free workshop, our children are eager to learn.</li>
+                <li>If you wish to donate or volunteer, your support will help us grow stronger.</li>
+            </ul>
+            <p className="text-muted-foreground text-sm font-body">
+                At JSB, everyone has a role to play — because building champions is not the work of one person, but of an entire community standing together.
+            </p>
+            <p className="font-semibold text-foreground font-body">
+                Join us in any way you can. Together, let’s fight for their dreams.
+            </p>
+            <Button size="lg" onClick={openDonationDialog} className="mt-4">
               Support The Mission
             </Button>
           </div>
         </div>
-
+        
         <div className="mt-20">
           <TeamSection />
         </div>
