@@ -50,7 +50,6 @@ export default function AboutPageClient() {
   const { openDonationDialog } = useDonation();
   const aboutImage = PlaceHolderImages.find(img => img.id === 'vision-champions');
   const champions = teamMembers.filter(member => member.role.toLowerCase().includes('fighter'));
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   return (
     <div className="bg-background text-foreground">
@@ -70,25 +69,9 @@ export default function AboutPageClient() {
           )}
           <div className="space-y-4">
             <h2 className="text-3xl font-bold font-headline">The Vision of JSB Academy</h2>
-             <p className="text-muted-foreground text-sm font-body">
-              JSB Boxing Academy is a citizen-led, not-for-profit initiative, run with passion and purpose to change lives through the power of sport. Founded and nurtured by two brothers, the academy was created with a simple yet powerful belief — that boxing can be a tool to break the cycle of poverty and open doors of opportunity for those who need it most.
-            </p>
-            <p className="text-muted-foreground text-sm font-body">
-              The academy provides completely free training to young girls and boys from villages and nearby communities, giving them access to facilities, mentorship, and opportunities that would otherwise be out of reach. At JSB, we welcome everyone — irrespective of caste, creed, or religion — because we believe talent has no boundaries.
-            </p>
-            <Button onClick={() => setIsDialogOpen(true)}>Read More</Button>
-            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-                <DialogContent className="max-h-[80vh] overflow-y-auto">
-                    <DialogHeader>
-                        <DialogTitle className="font-headline text-2xl">The Vision of JSB Academy</DialogTitle>
-                        <DialogDescription asChild>
-                           <div className="space-y-4 pt-4 text-base font-body text-sm">
-                             {fullText}
-                           </div>
-                        </DialogDescription>
-                    </DialogHeader>
-                </DialogContent>
-            </Dialog>
+            <div className="space-y-4">
+              {fullText}
+            </div>
           </div>
         </div>
         
