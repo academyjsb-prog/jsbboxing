@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -41,7 +42,7 @@ export default function ContactPageClient() {
                         <CardTitle className='font-headline'>Contact Information</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4 text-sm">
-                        <p><strong>Address:</strong> 123 Boxing Lane, Banaras, Uttar Pradesh – 221001, India</p>
+                        <p><strong>Address:</strong> C/O MR. ASHOK GATUM BUDH NAGAR , SADOPUR, Uttar Pradesh, India - 203207</p>
                         <p><strong>Email:</strong> info@jsbboxingacademy.org</p>
                         <p><strong>Phone:</strong> +91 98765 43210</p>
                         

@@ -74,7 +74,7 @@ export default function Footer() {
               <div className="text-center sm:text-left">
                 <p className="text-lg font-medium">Contact & Legal</p>
                 <div className="mt-4 flex flex-col space-y-2 text-sm text-muted-foreground">
-                    <p><strong>Address:</strong> 123 Boxing Lane, Banaras, Uttar Pradesh – 221001, India</p>
+                    <p><strong>Address:</strong> C/O MR. ASHOK GATUM BUDH NAGAR , SADOPUR, Uttar Pradesh, India - 203207</p>
                     <p><strong>Email:</strong> info@jsbboxingacademy.org</p>
                     <p><strong>Phone:</strong> +91 98765 43210</p>
                     <p className="pt-2"><strong>Reg. No.:</strong> 12345</p>
@@ -82,7 +82,7 @@ export default function Footer() {
                     <p>80G Tax Exemption: Available</p>
                 </div>
               </div>
-              <div className="text-center sm:text-left">
+              <div className="text-center sm_text-left">
                 <p className="text-lg font-medium">Bank Details</p>
                 <div className="mt-4 flex flex-col space-y-2 text-sm text-muted-foreground">
                   <p><strong>Account Name:</strong> JAISIDHBABA BOXING ACADEMY FEDERATION</p>
