@@ -65,8 +65,8 @@ export const testimonials = [
     image: PlaceHolderImages.find(img => img.id === 'testimonial-2'),
   },
   {
-    name: 'Rohan Singh',
-    role: 'Former Student, Now Mentor',
+    name: 'Neha Kapoor',
+    role: 'Well-Wisher & Donor',
     quote: 'It doesn’t matter how much you give — every single contribution goes directly towards the training and equipment for the kids at the academy. That’s what I love about JSB Boxing Academy — 100% of what you give creates real impact.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-3'),
   }
