@@ -3,15 +3,11 @@
 
 import Image from 'next/image';
 import TeamSection from '@/components/about/team-section';
-import { Button } from '@/components/ui/button';
-import { useDonation } from '@/context/donation-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import ChampionsSection from '@/components/about/champions-section';
 import { teamMembers } from '@/lib/data';
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { useState } from 'react';
 
-const fullText = (
+const firstHalfText = (
   <>
     <p className="text-muted-foreground text-sm font-body">
       JSB Boxing Academy is a citizen-led, not-for-profit initiative, run with passion and purpose to change lives through the power of sport. Founded and nurtured by two brothers, the academy was created with a simple yet powerful belief — that boxing can be a tool to break the cycle of poverty and open doors of opportunity for those who need it most.
@@ -22,39 +18,43 @@ const fullText = (
     <p className="text-muted-foreground text-sm font-body">
       Over the years, JSB Boxing Academy has trained hundreds of children and young people from underprivileged backgrounds, many of whom have proudly represented India in national and international championships. For our students, the academy is not just a training ground, but a safe space where discipline, resilience, and hope are built every single day.
     </p>
-    <p className="text-muted-foreground text-sm font-body">
-      But we cannot do this alone. Your support matters. Every glove, every punch, every medal won is the result of a community standing together. By joining hands with us — as a supporter, donor, or volunteer — you can help a child dream bigger, fight harder, and achieve more.
-    </p>
-    <p className="text-muted-foreground text-sm font-body">
-      Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond.
-    </p>
-    <p className="text-muted-foreground text-sm font-body">
-      But we can’t do this alone. JSB Boxing Academy is citizen-led and open to all.
-    </p>
-    <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm font-body">
-      <li>If you’re a boxer, coach, or trainer, you can come and share your skills.</li>
-      <li>If you want to run a free workshop, our children are eager to learn.</li>
-      <li>If you wish to donate or volunteer, your support will help us grow stronger.</li>
-    </ul>
-    <p className="text-muted-foreground text-sm font-body">
-      At JSB, everyone has a role to play — because building champions is not the work of one person, but of an entire community standing together.
-    </p>
-    <p className="font-semibold text-foreground font-body">
-      Join us in any way you can. Together, let’s fight for their dreams.
-    </p>
   </>
 );
 
+const secondHalfText = (
+    <>
+      <p className="text-muted-foreground text-sm font-body">
+        But we cannot do this alone. Your support matters. Every glove, every punch, every medal won is the result of a community standing together. By joining hands with us — as a supporter, donor, or volunteer — you can help a child dream bigger, fight harder, and achieve more.
+      </p>
+      <p className="text-muted-foreground text-sm font-body">
+        Together, let’s build a future where every child has the chance to dream, fight, and rise — inside the ring and beyond.
+      </p>
+      <p className="text-muted-foreground text-sm font-body">
+        But we can’t do this alone. JSB Boxing Academy is citizen-led and open to all.
+      </p>
+      <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm font-body">
+        <li>If you’re a boxer, coach, or trainer, you can come and share your skills.</li>
+        <li>If you want to run a free workshop, our children are eager to learn.</li>
+        <li>If you wish to donate or volunteer, your support will help us grow stronger.</li>
+      </ul>
+      <p className="text-muted-foreground text-sm font-body">
+        At JSB, everyone has a role to play — because building champions is not the work of one person, but of an entire community standing together.
+      </p>
+      <p className="font-semibold text-foreground font-body">
+        Join us in any way you can. Together, let’s fight for their dreams.
+      </p>
+    </>
+  );
+
 
 export default function AboutPageClient() {
-  const { openDonationDialog } = useDonation();
   const aboutImage = PlaceHolderImages.find(img => img.id === 'vision-champions');
   const champions = teamMembers.filter(member => member.role.toLowerCase().includes('fighter'));
 
   return (
     <div className="bg-background text-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-12">
           {aboutImage && (
             <div className="rounded-lg overflow-hidden shadow-lg">
               <Image
@@ -70,9 +70,13 @@ export default function AboutPageClient() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold font-headline">The Vision of JSB Academy</h2>
             <div className="space-y-4">
-              {fullText}
+              {firstHalfText}
             </div>
           </div>
+        </div>
+
+        <div className="space-y-4 mb-20">
+            {secondHalfText}
         </div>
         
         <div className="mt-20">
