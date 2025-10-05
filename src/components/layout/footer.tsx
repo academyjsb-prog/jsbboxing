@@ -75,8 +75,8 @@ export default function Footer() {
                 <p className="text-lg font-medium">Contact & Legal</p>
                 <div className="mt-4 flex flex-col space-y-2 text-sm text-muted-foreground">
                     <p><strong>Address:</strong> C/O MR. ASHOK GATUM BUDH NAGAR , SADOPUR, Uttar Pradesh, India - 203207</p>
-                    <p><strong>Email:</strong> info@jsbboxingacademy.org</p>
-                    <p><strong>Phone:</strong> +91 98765 43210</p>
+                    <p><strong>Email:</strong> academyjsb@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 93121 82112 | 78387 85088</p>
                     <p className="pt-2"><strong>Reg. No.:</strong> 12345</p>
                     <p><strong>FCRA No.:</strong> XYZ/FCRA/6789</p>
                     <p>80G Tax Exemption: Available</p>

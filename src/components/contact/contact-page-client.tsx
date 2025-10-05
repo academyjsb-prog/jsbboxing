@@ -43,8 +43,8 @@ export default function ContactPageClient() {
                     </CardHeader>
                     <CardContent className="space-y-4 text-sm">
                         <p><strong>Address:</strong> C/O MR. ASHOK GATUM BUDH NAGAR , SADOPUR, Uttar Pradesh, India - 203207</p>
-                        <p><strong>Email:</strong> info@jsbboxingacademy.org</p>
-                        <p><strong>Phone:</strong> +91 98765 43210</p>
+                        <p><strong>Email:</strong> academyjsb@gmail.com</p>
+                        <p><strong>Phone:</strong> +91 93121 82112 | 78387 85088</p>
                         
                         <p className='font-bold pt-4'>Legal Information</p>
                         <p>Registered under [Society/Trust Act Name], Reg. No.: 12345</p>
