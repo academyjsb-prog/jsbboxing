@@ -61,7 +61,7 @@ export default function AboutPageClient() {
             </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-20">
           {aboutImage && (
             <div className="rounded-lg overflow-hidden shadow-lg">
               <Image
