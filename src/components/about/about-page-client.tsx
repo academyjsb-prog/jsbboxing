@@ -55,10 +55,7 @@ export default function AboutPageClient() {
     <div className="bg-background text-foreground">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">About JSB Boxing Academy</h1>
-            <p className="mt-4 mx-auto text-base text-muted-foreground">
-                Founded with a vision to empower youth through sport.
-            </p>
+            <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">About us</h1>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-20">
