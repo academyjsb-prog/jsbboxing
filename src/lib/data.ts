@@ -53,8 +53,8 @@ export const teamMembers = [
 
 export const testimonials = [
   {
-    name: 'Aarav Sharma',
-    role: 'Junior Champion',
+    name: 'Amit Verma',
+    role: 'Corporate Donor',
     quote: 'I’ve supported many causes, but JSB Boxing Academy truly stands out. Seeing children from underprivileged backgrounds grow confident, disciplined, and full of dreams is inspiring. Knowing my donation is helping shape real champions gives me immense satisfaction.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-1'),
   },
