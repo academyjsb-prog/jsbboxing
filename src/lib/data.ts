@@ -26,7 +26,7 @@ export const teamMembers = [
   },
   {
     name: 'Jane "Swift" Smith',
-    role: 'Senior Trainer',
+    role: 'Senior Trainer & Former Fighter',
     image: PlaceHolderImages.find(img => img.id === 'team-2'),
   },
   {
@@ -36,7 +36,7 @@ export const teamMembers = [
   },
   {
     name: 'Emily "Lights Out" White',
-    role: 'Youth Program Coordinator',
+    role: 'National Champion Fighter',
     image: PlaceHolderImages.find(img => img.id === 'team-5'),
   },
     {
@@ -49,6 +49,11 @@ export const teamMembers = [
     role: 'Co-Founder',
     image: PlaceHolderImages.find(img => img.id === 'team-6'),
   },
+   {
+    name: 'Aarav "The Dynamo" Sharma',
+    role: 'Junior Champion Fighter',
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-1'),
+  }
 ];
 
 export const testimonials = [
