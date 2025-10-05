@@ -4,6 +4,7 @@ import { teamMembers } from '@/lib/data';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export default function TeamSection() {
+  const team = teamMembers.filter(member => !member.role.toLowerCase().includes('fighter'));
   return (
     <section>
       <div className="text-center mb-12">
@@ -13,7 +14,7 @@ export default function TeamSection() {
         </p>
       </div>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {teamMembers.map((member) => (
+        {team.map((member) => (
           <Card key={member.name} className="flex flex-col items-center text-center p-6 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
             <Avatar className="w-32 h-32 border-4 border-primary">
               {member.image && (

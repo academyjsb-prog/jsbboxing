@@ -79,11 +79,11 @@ export default function AboutPageClient() {
             {secondHalfText}
         </div>
         
-        <div className="mt-20">
+        <div className="mb-20">
           <TeamSection />
         </div>
 
-        <div className="mt-20">
+        <div className="mb-20">
           <ChampionsSection champions={champions} />
         </div>
       </div>
