@@ -67,7 +67,7 @@ export const testimonials = [
   {
     name: 'Rohan Singh',
     role: 'Former Student, Now Mentor',
-    quote: 'This academy saved me. It gave me a purpose and a community that felt like family. Now, I’m proud to give back and mentor the next generation of fighters who walk through these doors.',
+    quote: 'It doesn’t matter how much you give — every single contribution goes directly towards the training and equipment for the kids at the academy. That’s what I love about JSB Boxing Academy — 100% of what you give creates real impact.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-3'),
   }
 ];
