@@ -2,11 +2,14 @@
 'use client';
 
 import { Card, CardHeader } from '@/components/ui/card';
-import { teamMembers } from '@/lib/data';
+import type { TeamMember } from '@/lib/data';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
-export default function ChampionsSection() {
-  const champions = teamMembers.filter(member => member.role.toLowerCase().includes('fighter'));
+interface ChampionsSectionProps {
+  champions: TeamMember[];
+}
+
+export default function ChampionsSection({ champions }: ChampionsSectionProps) {
 
   return (
     <section>

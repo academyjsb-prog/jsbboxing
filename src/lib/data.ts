@@ -18,7 +18,13 @@ export const socialLinks = [
 
 const { placeholderImages: PlaceHolderImages } = placeholderData;
 
-export const teamMembers = [
+export interface TeamMember {
+    name: string;
+    role: string;
+    image?: ImagePlaceholder;
+}
+
+export const teamMembers: TeamMember[] = [
   {
     name: 'John "The Iron Fist" Doe',
     role: 'Head Coach & Founder',

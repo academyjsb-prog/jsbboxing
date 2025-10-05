@@ -7,10 +7,12 @@ import { Button } from '@/components/ui/button';
 import { useDonation } from '@/context/donation-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import ChampionsSection from '@/components/about/champions-section';
+import { teamMembers } from '@/lib/data';
 
 export default function AboutPageClient() {
   const { openDonationDialog } = useDonation();
   const aboutImage = PlaceHolderImages.find(img => img.id === 'vision-champions');
+  const champions = teamMembers.filter(member => member.role.toLowerCase().includes('fighter'));
 
   return (
     <div className="bg-background text-foreground">
@@ -67,7 +69,7 @@ export default function AboutPageClient() {
         </div>
 
         <div className="mt-20">
-          <ChampionsSection />
+          <ChampionsSection champions={champions} />
         </div>
       </div>
     </div>
