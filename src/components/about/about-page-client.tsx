@@ -58,7 +58,7 @@ export default function AboutPageClient() {
             <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">About us</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {aboutImage && (
             <div className="rounded-lg overflow-hidden shadow-lg">
               <Image
@@ -78,7 +78,7 @@ export default function AboutPageClient() {
           </div>
         </div>
 
-        <div className="space-y-4 mb-20">
+        <div className="space-y-4 my-12">
             {secondHalfText}
         </div>
         
