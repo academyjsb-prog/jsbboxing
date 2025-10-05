@@ -59,9 +59,9 @@ export const testimonials = [
     image: PlaceHolderImages.find(img => img.id === 'testimonial-1'),
   },
   {
-    name: 'Priya Patel',
-    role: 'Parent',
-    quote: 'My son was struggling with confidence. Since joining JSB, I’ve seen a complete transformation. He’s focused, responsible, and has a positive outlook on life. This place is truly special.',
+    name: 'Rohit Sharma',
+    role: 'Individual Donor',
+    quote: 'This is a really nice initiative! I’ve seen how JSB Boxing Academy is helping kids from humble backgrounds discover their strength and confidence. The best part is that my contribution doesn’t just make a difference — it’s also eligible for tax benefits under 80G. It feels good to give where it truly matters.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-2'),
   },
   {
