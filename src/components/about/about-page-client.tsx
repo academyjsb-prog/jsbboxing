@@ -6,6 +6,7 @@ import TeamSection from '@/components/about/team-section';
 import { Button } from '@/components/ui/button';
 import { useDonation } from '@/context/donation-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import ChampionsSection from '@/components/about/champions-section';
 
 export default function AboutPageClient() {
   const { openDonationDialog } = useDonation();
@@ -18,7 +19,7 @@ export default function AboutPageClient() {
           {aboutImage && (
             <div className="rounded-lg overflow-hidden shadow-lg">
               <Image
-                src={aboutImage.imageUrl}
+                src={"https://ik.imagekit.io/nb6cfzd7m/About%20us%20HOME.jpg?updatedAt=1759521570512"}
                 alt={aboutImage.description}
                 data-ai-hint={aboutImage.imageHint}
                 width={600}
@@ -63,6 +64,10 @@ export default function AboutPageClient() {
         
         <div className="mt-20">
           <TeamSection />
+        </div>
+
+        <div className="mt-20">
+          <ChampionsSection />
         </div>
       </div>
     </div>
