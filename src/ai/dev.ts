@@ -1,4 +1,4 @@
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/personalized-donation-prompt.ts';
+import './flows/personalized-donation-prompt';
