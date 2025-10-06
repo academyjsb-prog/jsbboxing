@@ -3,7 +3,8 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
-import { Users, Target, Shield, Heart } from 'lucide-react';
+import { Users, Target, Shield, Heart, Download } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const impactStats = [
   {
@@ -44,6 +45,12 @@ const yearlyGrowth = [
   { year: '2023', students: 150, medals: 48 },
   { year: '2024', students: 200, medals: 55 },
 ];
+
+const annualReports = [
+    { year: '2023', filePath: '/reports/JSB-Annual-Report-2023.pdf' },
+    { year: '2022', filePath: '/reports/JSB-Annual-Report-2022.pdf' },
+    { year: '2021', filePath: '/reports/JSB-Annual-Report-2021.pdf' },
+]
 
 
 export default function ReportsPageClient() {
@@ -118,6 +125,33 @@ export default function ReportsPageClient() {
                     </ResponsiveContainer>
                 </CardContent>
             </Card>
+        </div>
+        
+        <div className="mb-16">
+            <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">Annual Reports</h2>
+                <p className="mt-4 max-w-3xl mx-auto text-base text-muted-foreground">
+                    Download our detailed annual reports to see the full scope of our activities and financial transparency.
+                </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {annualReports.map((report) => (
+                    <Card key={report.year} className="shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                        <CardHeader>
+                            <CardTitle className="font-headline">Annual Report {report.year}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-muted-foreground mb-4">Click below to download the PDF report for the year {report.year}.</p>
+                             <Button asChild className="w-full">
+                                <a href={report.filePath} download>
+                                    <Download className="mr-2 h-4 w-4" />
+                                    Download PDF
+                                </a>
+                            </Button>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
         </div>
 
          <div className="text-center">
