@@ -109,18 +109,19 @@ export default function ReportsPageClient() {
                             cx="50%"
                             cy="50%"
                             labelLine={false}
-                            outerRadius={100}
+                            outerRadius={80}
                             fill="#8884d8"
                             dataKey="value"
                             nameKey="name"
-                            label={(entry) => `${entry.name} (${entry.value})`}
                           >
                             {fundingData.map((entry, index) => (
                               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                             ))}
                           </Pie>
-                          <Tooltip />
-                          <Legend />
+                          <Tooltip 
+                            contentStyle={{ backgroundColor: 'hsl(var(--background))', border: '1px solid hsl(var(--border))' }}
+                          />
+                          <Legend layout="vertical" align="right" verticalAlign="middle" wrapperStyle={{ paddingLeft: '20px' }} />
                         </PieChart>
                     </ResponsiveContainer>
                 </CardContent>
