@@ -8,7 +8,8 @@ import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { useDonation } from '@/context/donation-context';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 export default function Header() {
   const { openDonationDialog } = useDonation();
@@ -45,6 +46,11 @@ export default function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetHeader>
+                <SheetTitle>
+                  <VisuallyHidden>Main Menu</VisuallyHidden>
+                </SheetTitle>
+              </SheetHeader>
               <div className="flex flex-col gap-6 p-6">
                 <Link href="/" className="flex items-center gap-2 font-bold text-lg" onClick={() => setIsMenuOpen(false)}>
                   <div className="font-headline">
