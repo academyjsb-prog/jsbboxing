@@ -227,6 +227,12 @@
       "description": "Portrait of a mentor.",
       "imageUrl": "https://images.unsplash.com/photo-1741805190358-aff8c1c1d72a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1MTQ2MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mentor portrait"
+    },
+    {
+      "id": "testimonial-parth",
+      "description": "Profile picture of Parth Chopra.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/Parth%20sir.jpeg?updatedAt=1759857470561",
+      "imageHint": "man portrait"
     }
   ]
 }

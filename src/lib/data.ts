@@ -86,5 +86,13 @@ export const testimonials = [
     role: 'Local Business Owner',
     quote: 'Every contribution, big or small, goes directly to training and equipment for the kids. That’s what makes JSB Boxing Academy truly impactful.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-3'),
+  },
+  {
+    name: 'Parth Chopra',
+    role: 'Individual donor and Mentor',
+    quote: 'JSB Boxing Academy is a wonderful initiative! Helping kids discover strength and confidence, while my contribution makes a real impact and is 80G tax-beneficial, feels truly rewarding.',
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-parth'),
   }
 ];
+
+    
