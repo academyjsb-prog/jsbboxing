@@ -66,7 +66,7 @@ export default function AboutPageClient() {
                 alt={aboutImage.description}
                 data-ai-hint={aboutImage.imageHint}
                 fill
-                className="object-contain"
+                className="object-cover"
               />
             </div>
           )}
