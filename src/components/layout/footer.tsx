@@ -82,7 +82,7 @@ export default function Footer() {
                     <p>80G Tax Exemption: Available</p>
                 </div>
               </div>
-              <div className="text-center sm_text-left">
+              <div className="text-center sm:text-left">
                 <p className="text-lg font-medium">Bank Details</p>
                 <div className="mt-4 flex flex-col space-y-2 text-sm text-muted-foreground">
                   <p><strong>Account Name:</strong> JAISIDHBABA BOXING ACADEMY FEDERATION</p>
