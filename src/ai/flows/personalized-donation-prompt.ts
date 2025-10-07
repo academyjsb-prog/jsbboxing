@@ -10,6 +10,7 @@
  */
 
 import {ai} from '@/ai/genkit';
+import {googleAI} from '@genkit-ai/google-genai';
 import {z} from 'genkit';
 
 const PersonalizedDonationPromptInputSchema = z.object({
@@ -40,6 +41,7 @@ const prompt = ai.definePrompt({
   name: 'personalizedDonationPromptPrompt',
   input: {schema: PersonalizedDonationPromptInputSchema},
   output: {schema: PersonalizedDonationPromptOutputSchema},
+  model: googleAI.model('gemini-1.5-flash-latest'),
   prompt: `You are a donation prompt generator for JSB Boxing Academy.
 
   Based on the user's engagement with the site, suggest a donation amount in INR and a reason for the suggestion.
