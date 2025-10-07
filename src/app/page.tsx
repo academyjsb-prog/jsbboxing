@@ -10,6 +10,7 @@ import GetInvolved from '@/components/home/get-involved';
 import AboutPreview from '@/components/home/about-preview';
 import { useDonation } from '@/context/donation-context';
 import ChampionsPreview from '@/components/home/champions-preview';
+import ImpactPreview from '@/components/home/impact-preview';
 
 export default function Home() {
   const { setIsOpen } = useDonation();
@@ -27,6 +28,7 @@ export default function Home() {
     <>
       <Hero />
       <Mission />
+      <ImpactPreview />
       <Testimonials />
       <ChampionsPreview />
       <GalleryPreview />
