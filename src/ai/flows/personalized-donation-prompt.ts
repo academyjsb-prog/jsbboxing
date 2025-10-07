@@ -56,7 +56,6 @@ const prompt = ai.definePrompt({
     "donationAmount": "number",
     "reason": "string"
   }`,
-  model: 'gemini-pro',
 });
 
 const personalizedDonationPromptFlow = ai.defineFlow(
