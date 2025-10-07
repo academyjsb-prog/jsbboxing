@@ -60,7 +60,7 @@ export default function AboutPageClient() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {aboutImage && (
-            <div className="relative aspect-video w-full h-full overflow-hidden rounded-lg shadow-lg">
+            <div className="relative aspect-video w-full h-full overflow-hidden rounded-lg shadow-lg md:order-1">
               <Image
                 src={aboutImage.imageUrl}
                 alt={aboutImage.description}
@@ -70,7 +70,7 @@ export default function AboutPageClient() {
               />
             </div>
           )}
-          <div className="space-y-4">
+          <div className="space-y-4 md:order-2">
             <div className="space-y-4">
               {firstHalfText}
             </div>
