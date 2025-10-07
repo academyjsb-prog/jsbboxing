@@ -62,7 +62,7 @@ export default function AboutPageClient() {
           {aboutImage && (
             <div className="relative aspect-video w-full h-full overflow-hidden rounded-lg shadow-lg">
               <Image
-                src={"https://ik.imagekit.io/nb6cfzd7m/About%20us%20HOME.jpg?updatedAt=1759521570512"}
+                src={aboutImage.imageUrl}
                 alt={aboutImage.description}
                 data-ai-hint={aboutImage.imageHint}
                 fill

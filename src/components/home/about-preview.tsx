@@ -25,14 +25,13 @@ export default function AboutPreview() {
             </Button>
           </div>
           {aboutImage && (
-            <div className="rounded-lg overflow-hidden shadow-lg">
+            <div className="relative aspect-video w-full h-full overflow-hidden rounded-lg shadow-lg">
               <Image
                 src={aboutImage.imageUrl}
                 alt={aboutImage.description}
                 data-ai-hint={aboutImage.imageHint}
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
+                fill
+                className="object-contain"
               />
             </div>
           )}
