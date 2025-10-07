@@ -58,7 +58,7 @@ export default function AboutPageClient() {
             <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">About us</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {aboutImage && (
             <div className="relative aspect-video w-full h-full overflow-hidden rounded-lg shadow-lg">
               <Image
@@ -66,7 +66,7 @@ export default function AboutPageClient() {
                 alt={aboutImage.description}
                 data-ai-hint={aboutImage.imageHint}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
           )}
