@@ -50,15 +50,9 @@ const prompt = ai.definePrompt({
   Time spent: {{{timeSpent}}} seconds
   Pages viewed: {{{pagesViewed}}}
 
-  Respond with a suggested donation amount and a compelling reason, in JSON format.
+  Respond with a suggested donation amount and a compelling reason.
 
-  Ensure the donation amount is reasonable and reflects the user's level of interest. Give slightly higher donation amounts to users who have spent longer on the site and viewed more pages.
-
-  Here is the output schema:
-  {
-    "donationAmount": "number",
-    "reason": "string"
-  }`,
+  Ensure the donation amount is reasonable and reflects the user's level of interest. Give slightly higher donation amounts to users who have spent longer on the site and viewed more pages.`,
 });
 
 const personalizedDonationPromptFlow = ai.defineFlow(
