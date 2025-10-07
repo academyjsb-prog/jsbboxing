@@ -233,6 +233,12 @@
       "description": "Profile picture of Parth Chopra.",
       "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/Parth%20sir.jpeg?updatedAt=1759857470561",
       "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-new-supporter",
+      "description": "Portrait of a supporter.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/images.jpeg?updatedAt=1759857698746",
+      "imageHint": "person portrait"
     }
   ]
 }

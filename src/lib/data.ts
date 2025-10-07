@@ -67,7 +67,7 @@ export const testimonials = [
     name: 'Priya Singh',
     role: 'Community Supporter',
     quote: 'Supporting JSB Boxing Academy is inspiring—seeing underprivileged kids grow confident and disciplined, knowing my donation helps shape real champions, brings me immense joy.',
-    image: PlaceHolderImages.find(img => img.id === 'testimonial-2'),
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
   },
   {
     name: 'Amit Verma',
@@ -85,7 +85,7 @@ export const testimonials = [
     name: 'Sunita Sharma',
     role: 'Local Business Owner',
     quote: 'Every contribution, big or small, goes directly to training and equipment for the kids. That’s what makes JSB Boxing Academy truly impactful.',
-    image: PlaceHolderImages.find(img => img.id === 'testimonial-3'),
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
   },
   {
     name: 'Parth Chopra',
@@ -95,4 +95,5 @@ export const testimonials = [
   }
 ];
 
+    
     
