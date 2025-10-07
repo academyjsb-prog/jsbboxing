@@ -60,14 +60,13 @@ export default function AboutPageClient() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {aboutImage && (
-            <div className="rounded-lg overflow-hidden shadow-lg">
+            <div className="relative aspect-video w-full h-full overflow-hidden rounded-lg shadow-lg">
               <Image
                 src={"https://ik.imagekit.io/nb6cfzd7m/About%20us%20HOME.jpg?updatedAt=1759521570512"}
                 alt={aboutImage.description}
                 data-ai-hint={aboutImage.imageHint}
-                width={600}
-                height={400}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           )}
