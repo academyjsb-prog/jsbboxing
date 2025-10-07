@@ -82,9 +82,9 @@ export const testimonials = [
     image: PlaceHolderImages.find(img => img.id === 'testimonial-2'),
   },
   {
-    name: 'Neha Kapoor',
-    role: 'Well-Wisher & Donor',
-    quote: 'It doesn’t matter how much you give — every single contribution goes directly towards the training and equipment for the kids at the academy. That’s what I love about JSB Boxing Academy — 100% of what you give creates real impact.',
+    name: 'Sunita Sharma',
+    role: 'Local Business Owner',
+    quote: 'Every contribution, big or small, goes directly to training and equipment for the kids. That’s what makes JSB Boxing Academy truly impactful.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-3'),
   }
 ];
