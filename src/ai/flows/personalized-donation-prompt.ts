@@ -1,3 +1,4 @@
+
 'use server';
 
 /**
@@ -40,7 +41,7 @@ const prompt = ai.definePrompt({
   name: 'personalizedDonationPromptPrompt',
   input: {schema: PersonalizedDonationPromptInputSchema},
   output: {schema: PersonalizedDonationPromptOutputSchema},
-  model: googleAI.model('gemini-pro'),
+  model: googleAI.model('gemini-1.0-pro'),
   prompt: `You are a donation prompt generator for JSB Boxing Academy.
 
   Based on the user's engagement with the site, suggest a donation amount in INR and a reason for the suggestion.
