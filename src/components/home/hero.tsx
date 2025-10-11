@@ -40,10 +40,10 @@ const sliderContent = [
     },
     {
         id: 'hero-slider-4',
-        title: 'Discipline, Dedication, and Dreams',
-        description: 'Through rigorous training and mentorship, our boxers learn the discipline it takes to become champions and the dedication to pursue their dreams against all odds.',
-        buttonText: 'Our Impact',
-        buttonLink: '/reports',
+        title: 'Champions in the Making',
+        description: 'Each child in our academy has a story of courage and determination.',
+        buttonText: 'Meet the champion',
+        buttonLink: '/about',
     }
 ]
 
