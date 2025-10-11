@@ -1,113 +1,45 @@
-
 'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Button } from '../ui/button';
-import { useDonation } from '@/context/donation-context';
-import Autoplay from "embla-carousel-autoplay"
+import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-
-const sliderContent = [
-    {
-        id: 'hero-slider-1',
-        title: 'Free Training. Equal Dreams.',
-        description: 'At JSB Boxing Academy, both boys and girls receive free professional boxing training — unlocking strength, confidence, and opportunity.',
-        buttonText: 'About Us',
-        buttonLink: '/about',
-    },
-    {
-        id: 'hero-slider-2',
-        title: 'We Train Champions Not Just Boxers.',
-        description: 'We shape discipline, ethics, and values - helping every child grow stronger inside and outside the ring.',
-        buttonText: 'What our Supporters say',
-        buttonLink: '/#testimonials',
-    },
-    {
-        id: 'hero-slider-3',
-        title: 'Donate to Train a Champion',
-        description: 'Be the reason a child finds purpose, power, and pride through boxing.',
-        buttonText: 'Donate Now',
-        buttonAction: 'donate',
-    },
-    {
-        id: 'hero-slider-4',
-        title: 'Champions in the Making',
-        description: 'Each child in our academy has a story of courage and determination.',
-        buttonText: 'Meet the champion',
-        buttonLink: '/about',
-    }
-]
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Hero() {
-  const { openDonationDialog } = useDonation();
-  const heroImages = PlaceHolderImages.filter((img) =>
-    sliderContent.some(content => content.id === img.id)
-  );
+    const heroImage = PlaceHolderImages.find(img => img.id === 'empowering-girls');
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] bg-background">
-      <Carousel 
-        className="w-full h-full"
-        plugins={[
-            Autoplay({
-              delay: 5000,
-              stopOnInteraction: true,
-            }),
-          ]}
-      >
-        <CarouselContent>
-          {sliderContent.map((content, index) => {
-            const image = heroImages.find(img => img.id === content.id);
-            return (
-              <CarouselItem key={index}>
-                <div className="relative h-full w-full">
-                  {image && (
-                    <Image
-                      src={image.imageUrl}
-                      alt={image.description}
-                      data-ai-hint={image.imageHint}
-                      fill
-                      className="object-cover"
-                      priority={index === 0}
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent" />
-                  <div className="absolute inset-0 flex flex-col items-center justify-end p-8 md:p-16 text-center text-white">
-                    <div className="md:order-1 order-2">
-                        <h1 className="text-4xl font-bold font-headline tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                            {content.title}
-                        </h1>
-                        <p className="max-w-[700px] text-white/90 md:text-xl mt-4 font-body">
-                            {content.description}
-                        </p>
-                        <div className="mt-6">
-                            {content.buttonAction === 'donate' ? (
-                                <Button size="lg" onClick={openDonationDialog}>
-                                    {content.buttonText}
-                                </Button>
-                            ) : (
-                                <Button asChild size="lg">
-                                    <Link href={content.buttonLink || '/'}>
-                                        {content.buttonText} <ArrowRight className="ml-2" />
-                                    </Link>
-                                </Button>
-                            )}
-                        </div>
-                    </div>
-                  </div>
-                </div>
-              </CarouselItem>
-            );
-          })}
-        </CarouselContent>
-      </Carousel>
+    <section className="relative w-full bg-gray-800 text-white">
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 text-center md:text-left">
+            <h1 className="text-4xl font-bold font-headline tracking-tighter sm:text-5xl md:text-6xl">
+              Empowering Girls Through Sport
+            </h1>
+            <p className="max-w-md mx-auto md:mx-0 text-lg text-gray-300 font-body">
+              We are committed to providing a safe and empowering space for girls to train, compete, and break barriers. Your support helps us create equal opportunities for all.
+            </p>
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Link href="/gallery">
+                See Our Gallery <ArrowRight className="ml-2" />
+              </Link>
+            </Button>
+          </div>
+          <div className="w-full">
+            {heroImage && (
+                <Image
+                    src={heroImage.imageUrl}
+                    alt={heroImage.description}
+                    data-ai-hint={heroImage.imageHint}
+                    width={1280}
+                    height={720}
+                    className="rounded-lg shadow-lg object-cover w-full h-auto"
+                />
+            )}
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
