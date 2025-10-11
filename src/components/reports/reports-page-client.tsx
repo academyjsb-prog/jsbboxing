@@ -36,7 +36,7 @@ const fundingData = [
   { name: 'Fundraising Events', value: 100 },
 ];
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#2094f3', '#00C49F', '#FFBB28', '#FF8042'];
 
 const yearlyGrowth = [
   { year: '2020', students: 50, medals: 10 },

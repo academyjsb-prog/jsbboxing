@@ -85,7 +85,7 @@ export default function DonationDialog() {
           {suggestion && !isLoading && (
             <div className="p-4 border-2 border-primary rounded-lg bg-primary/10 transition-all duration-500">
               <p className="text-sm font-semibold text-primary">Personalized Suggestion for You:</p>
-              <p className="text-lg font-bold">₹{suggestion.donationAmount}</p>
+              <p className="text-lg font-bold text-foreground">₹{suggestion.donationAmount}</p>
               <p className="text-sm text-muted-foreground">{suggestion.reason}</p>
             </div>
           )}
