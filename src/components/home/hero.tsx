@@ -1,20 +1,21 @@
+
 'use client';
 
-import { useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useDonation } from '@/context/donation-context';
 import Autoplay from 'embla-carousel-autoplay';
+import { cn } from '@/lib/utils';
 
 const sliderContent = [
   {
@@ -57,7 +58,21 @@ const sliderContent = [
 
 export default function Hero() {
   const { openDonationDialog } = useDonation();
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+    setCurrent(api.selectedScrollSnap());
+    api.on('select', () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
 
   const handleButtonClick = (action: string) => {
     if (action === 'donate') {
@@ -65,66 +80,95 @@ export default function Hero() {
     }
   };
 
+  const handleDotClick = useCallback((index: number) => {
+    api?.scrollTo(index);
+  }, [api]);
+
+
+  const currentSlide = sliderContent[current];
+
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] text-white">
-      <Carousel
-        className="w-full h-full"
-        plugins={[plugin.current]}
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
-        opts={{ loop: true }}
-      >
-        <CarouselContent>
-          {sliderContent.map((slide) => {
-            const image = PlaceHolderImages.find((img) => img.id === slide.id);
-            return (
-              <CarouselItem key={slide.id}>
-                <div className="relative w-full h-[60vh] md:h-[80vh]">
-                  {image && (
-                    <Image
-                      src={image.imageUrl}
-                      alt={image.description}
-                      data-ai-hint={image.imageHint}
-                      fill
-                      className="object-cover"
-                      priority={slide.id === 'hero-slider-1'}
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-black/50" />
-                  <div className="absolute inset-0 flex items-center justify-center md:justify-start">
-                    <div className="container mx-auto px-4">
-                       <div className="w-full md:w-1/2 text-center md:text-left space-y-4 md:space-y-6">
-                        <h1 className="text-4xl font-bold font-headline tracking-tighter sm:text-5xl md:text-6xl">
-                          {slide.title}
-                        </h1>
-                        <p className="text-lg md:text-xl text-gray-200 font-body">
-                          {slide.description}
-                        </p>
-                        {slide.action === 'link' ? (
-                          <Button asChild size="lg">
-                            <Link href={slide.buttonLink}>
-                              {slide.buttonText} <ArrowRight className="ml-2" />
-                            </Link>
-                          </Button>
-                        ) : (
-                          <Button
-                            size="lg"
-                            onClick={() => handleButtonClick(slide.action)}
-                          >
-                            {slide.buttonText} <ArrowRight className="ml-2" />
-                          </Button>
+    <section className="w-full bg-background text-foreground py-12 md:py-20">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          
+          <div className="flex flex-col justify-center space-y-6 md:order-1 order-2">
+            <div className="space-y-4">
+                <h1 className="text-5xl font-bold font-headline tracking-tighter sm:text-6xl md:text-7xl uppercase">
+                  {currentSlide.title}
+                </h1>
+                <p className="text-lg text-muted-foreground font-body max-w-md">
+                  {currentSlide.description}
+                </p>
+            </div>
+            
+            {currentSlide.action === 'link' ? (
+              <Button asChild size="lg" className="w-fit">
+                <Link href={currentSlide.buttonLink}>
+                  {currentSlide.buttonText} <ArrowRight className="ml-2" />
+                </Link>
+              </Button>
+            ) : (
+              <Button
+                size="lg"
+                onClick={() => handleButtonClick(currentSlide.action)}
+                className="w-fit"
+              >
+                {currentSlide.buttonText} <ArrowRight className="ml-2" />
+              </Button>
+            )}
+
+            <div className="flex gap-2 pt-4">
+                {sliderContent.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => handleDotClick(index)}
+                        className={cn(
+                            'h-2 w-2 rounded-full transition-colors',
+                            index === current ? 'bg-primary' : 'bg-muted'
+                        )}
+                    >
+                        <span className="sr-only">Go to slide {index + 1}</span>
+                    </button>
+                ))}
+            </div>
+          </div>
+
+          <div className="md:order-2 order-1">
+            <Carousel
+              setApi={setApi}
+              className="w-full"
+              plugins={[plugin.current]}
+              onMouseEnter={plugin.current.stop}
+              onMouseLeave={plugin.current.reset}
+              opts={{ loop: true }}
+            >
+              <CarouselContent>
+                {sliderContent.map((slide) => {
+                  const image = PlaceHolderImages.find((img) => img.id === slide.id);
+                  return (
+                    <CarouselItem key={slide.id}>
+                      <div className="relative aspect-[4/3] w-full">
+                        {image && (
+                          <Image
+                            src={image.imageUrl}
+                            alt={image.description}
+                            data-ai-hint={image.imageHint}
+                            fill
+                            className="object-cover rounded-[2.5rem]"
+                            priority={slide.id === 'hero-slider-1'}
+                          />
                         )}
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </CarouselItem>
-            );
-          })}
-        </CarouselContent>
-        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
-        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
-      </Carousel>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+            </Carousel>
+          </div>
+
+        </div>
+      </div>
     </section>
   );
 }
