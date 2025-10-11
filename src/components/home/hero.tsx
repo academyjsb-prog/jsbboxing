@@ -33,10 +33,10 @@ const sliderContent = [
     },
     {
         id: 'hero-slider-3',
-        title: 'Empowering Girls Through Sport',
-        description: 'We are committed to providing a safe and empowering space for girls to train, compete, and break barriers. Your support helps us create equal opportunities for all.',
-        buttonText: 'See Our Gallery',
-        buttonLink: '/gallery',
+        title: 'Donate to Train a Champion',
+        description: 'Be the reason a child finds purpose, power, and pride through boxing.',
+        buttonText: 'Donate Now',
+        buttonAction: 'donate',
     },
     {
         id: 'hero-slider-4',
