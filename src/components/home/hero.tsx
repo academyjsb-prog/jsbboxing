@@ -22,7 +22,7 @@ const sliderContent = [
     id: 'hero-slider-1',
     title: (
       <>
-        Free Training. Equal <span style={{ color: '#57ADF5' }}>Dreams</span>.
+        Free Training. <br /> Equal <span style={{ color: '#57ADF5' }}>Dreams</span>.
       </>
     ),
     description:
@@ -35,7 +35,7 @@ const sliderContent = [
     id: 'hero-slider-2',
     title: (
       <>
-        We Train <span style={{ color: '#57ADF5' }}>Champions</span> Not Just Boxers.
+        We Train <span style={{ color: '#57ADF5' }}>Champions</span>, <br /> Not Just Boxers.
       </>
     ),
     description:
@@ -48,7 +48,7 @@ const sliderContent = [
     id: 'hero-slider-3',
     title: (
       <>
-        <span style={{ color: '#57ADF5' }}>Donate</span> to Train a Champion
+        <span style={{ color: '#57ADF5' }}>Donate</span> to Train <br /> a Champion
       </>
     ),
     description:
@@ -61,7 +61,7 @@ const sliderContent = [
     id: 'hero-slider-4',
     title: (
       <>
-        Champions <span style={{ color: '#57ADF5' }}>in the Making</span>
+        Champions <br /> <span style={{ color: '#57ADF5' }}>in the Making</span>
       </>
     ),
     description:
