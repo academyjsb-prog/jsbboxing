@@ -19,8 +19,8 @@ import { ArrowRight } from 'lucide-react';
 const sliderContent = [
     {
         id: 'hero-slider-1',
-        title: 'Training Champions, Building Futures',
-        description: 'At JSB Boxing Academy, we empower underprivileged youth through the discipline of boxing, providing them with the skills, confidence, and hope they need to succeed in and out of the ring.',
+        title: 'Free Training. Equal Dreams.',
+        description: 'At JSB Boxing Academy, both boys and girls receive free professional boxing training — unlocking strength, confidence, and opportunity.',
         buttonText: 'Donate Now',
         buttonAction: 'donate',
     },
