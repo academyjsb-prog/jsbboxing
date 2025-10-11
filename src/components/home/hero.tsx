@@ -110,10 +110,10 @@ export default function Hero() {
           
           <div className="flex flex-col justify-center space-y-6 md:order-1 order-2">
             <div className="space-y-4">
-                <h1 className="text-4xl font-bold font-headline tracking-tighter sm:text-5xl md:text-6xl uppercase">
+                <h1 className="text-3xl font-bold font-headline tracking-tighter sm:text-4xl md:text-5xl uppercase">
                   {currentSlide.title}
                 </h1>
-                <p className="text-base text-muted-foreground font-body max-w-md">
+                <p className="text-sm text-muted-foreground font-body max-w-md">
                   {currentSlide.description}
                 </p>
             </div>
