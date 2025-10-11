@@ -21,8 +21,8 @@ const sliderContent = [
         id: 'hero-slider-1',
         title: 'Free Training. Equal Dreams.',
         description: 'At JSB Boxing Academy, both boys and girls receive free professional boxing training — unlocking strength, confidence, and opportunity.',
-        buttonText: 'Donate Now',
-        buttonAction: 'donate',
+        buttonText: 'About Us',
+        buttonLink: '/about',
     },
     {
         id: 'hero-slider-2',
@@ -76,11 +76,11 @@ export default function Hero() {
                       alt={image.description}
                       data-ai-hint={image.imageHint}
                       fill
-                      className="object-cover md:opacity-50"
+                      className="object-cover opacity-50"
                       priority={index === 0} 
                     />
                   )}
-                  <div className="absolute inset-0 flex items-center bg-black/50 md:bg-transparent">
+                  <div className="absolute inset-0 flex items-center bg-black/50">
                     <div className="container mx-auto px-4 md:px-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="flex flex-col justify-center space-y-4 text-white">
