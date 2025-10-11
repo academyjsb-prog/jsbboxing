@@ -9,6 +9,7 @@ import AboutPreview from '@/components/home/about-preview';
 import { useDonation } from '@/context/donation-context';
 import ChampionsPreview from '@/components/home/champions-preview';
 import ImpactPreview from '@/components/home/impact-preview';
+import Hero from '@/components/home/hero';
 
 export default function Home() {
   const { setIsOpen } = useDonation();
@@ -24,6 +25,7 @@ export default function Home() {
 
   return (
     <>
+      <Hero />
       <Mission />
       <ImpactPreview />
       <Testimonials />
@@ -34,3 +36,5 @@ export default function Home() {
     </>
   );
 }
+
+    

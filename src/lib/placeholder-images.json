@@ -1,10 +1,28 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-boxing",
-      "description": "A dramatic shot of a boxer wrapping their hands before a fight.",
-      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/About%20us%20HOME.jpg?updatedAt=1759521570512",
-      "imageHint": "boxing ring"
+      "id": "hero-slider-1",
+      "description": "A young boxer training with a punching bag.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/1png?updatedAt=1760204016281",
+      "imageHint": "boxer training"
+    },
+    {
+      "id": "hero-slider-2",
+      "description": "A group of young boxers with their coach.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/0001.png?updatedAt=1760204016460",
+      "imageHint": "boxing team"
+    },
+    {
+      "id": "hero-slider-3",
+      "description": "A female boxer posing in the ring.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/_0002.png?updatedAt=1760204016208",
+      "imageHint": "female boxer"
+    },
+    {
+      "id": "hero-slider-4",
+      "description": "Two young boxers sparring in the ring.",
+      "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/0003.png?updatedAt=1760204016208",
+      "imageHint": "boxers sparring"
     },
     {
       "id": "gallery-1",
@@ -225,7 +243,7 @@
     {
       "id": "testimonial-3",
       "description": "Portrait of a mentor.",
-      "imageUrl": "https://images.unsplash.com/photo-1741805190358-aff8c1c1d72a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1MTQ2MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1741805190358-aff8c1c1d72a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1MTQ2MDN8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "mentor portrait"
     },
     {
