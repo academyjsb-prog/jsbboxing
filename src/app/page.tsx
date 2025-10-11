@@ -1,8 +1,6 @@
-
 'use client';
 
 import { useEffect } from 'react';
-import Hero from '@/components/home/hero';
 import Mission from '@/components/home/mission';
 import Testimonials from '@/components/home/testimonials';
 import GalleryPreview from '@/components/home/gallery-preview';
@@ -26,7 +24,6 @@ export default function Home() {
 
   return (
     <>
-      <Hero />
       <Mission />
       <ImpactPreview />
       <Testimonials />
