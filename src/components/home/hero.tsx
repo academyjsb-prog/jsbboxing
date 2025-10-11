@@ -20,7 +20,11 @@ import { cn } from '@/lib/utils';
 const sliderContent = [
   {
     id: 'hero-slider-1',
-    title: 'Free Training. Equal Dreams.',
+    title: (
+      <>
+        Free Training. Equal <span style={{ color: '#57ADF5' }}>Dreams</span>.
+      </>
+    ),
     description:
       'At JSB Boxing Academy, both boys and girls receive free professional boxing training — unlocking strength, confidence, and opportunity.',
     buttonText: 'About Us',
@@ -29,7 +33,11 @@ const sliderContent = [
   },
   {
     id: 'hero-slider-2',
-    title: 'We Train Champions Not Just Boxers.',
+    title: (
+      <>
+        We Train <span style={{ color: '#57ADF5' }}>Champions</span> Not Just Boxers.
+      </>
+    ),
     description:
       'We shape discipline, ethics, and values - helping every child grow stronger inside and outside the ring.',
     buttonText: 'What our Supporters say',
@@ -38,7 +46,11 @@ const sliderContent = [
   },
   {
     id: 'hero-slider-3',
-    title: 'Donate to Train a Champion',
+    title: (
+      <>
+        <span style={{ color: '#57ADF5' }}>Donate</span> to Train a Champion
+      </>
+    ),
     description:
       'Be the reason a child finds purpose, power, and pride through boxing.',
     buttonText: 'Donate Now',
@@ -47,7 +59,11 @@ const sliderContent = [
   },
   {
     id: 'hero-slider-4',
-    title: 'Champions in the Making',
+    title: (
+      <>
+        Champions <span style={{ color: '#57ADF5' }}>in the Making</span>
+      </>
+    ),
     description:
       'Each child in our academy has a story of courage and determination.',
     buttonText: 'Meet the champion',
@@ -124,7 +140,7 @@ export default function Hero() {
                         key={index}
                         onClick={() => handleDotClick(index)}
                         className={cn(
-                            'h-2 w-2 rounded-full transition-colors',
+                            'h-2 w-10 rounded-full transition-colors',
                             index === current ? 'bg-primary' : 'bg-muted'
                         )}
                     >
