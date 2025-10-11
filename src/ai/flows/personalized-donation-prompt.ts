@@ -40,6 +40,8 @@ export async function personalizedDonationPrompt(input: PersonalizedDonationProm
 const prompt = ai.definePrompt({
   name: 'personalizedDonationPromptPrompt',
   input: {schema: PersonalizedDonationPromptInputSchema},
+  output: {schema: PersonalizedDonationPromptOutputSchema},
+  model: googleAI.model('gemini-1.0-pro'),
   prompt: `You are a donation prompt generator for JSB Boxing Academy.
 
   Based on the user's engagement with the site, suggest a donation amount in INR and a reason for the suggestion.
@@ -50,9 +52,7 @@ const prompt = ai.definePrompt({
 
   Respond with a suggested donation amount and a compelling reason.
 
-  Ensure the donation amount is reasonable and reflects the user's level of interest. Give slightly higher donation amounts to users who have spent longer on the site and viewed more pages.
-  
-  Respond with a valid JSON object matching this schema: ${JSON.stringify(PersonalizedDonationPromptOutputSchema.jsonSchema)}`,
+  Ensure the donation amount is reasonable and reflects the user's level of interest. Give slightly higher donation amounts to users who have spent longer on the site and viewed more pages.`,
 });
 
 const personalizedDonationPromptFlow = ai.defineFlow(
@@ -62,22 +62,7 @@ const personalizedDonationPromptFlow = ai.defineFlow(
     outputSchema: PersonalizedDonationPromptOutputSchema,
   },
   async input => {
-    const result = await prompt(input, {model: googleAI.model('gemini-1.0-pro')});
-    const text = result.text;
-    
-    // Find the JSON part of the response
-    const jsonString = text.substring(text.indexOf('{'), text.lastIndexOf('}') + 1);
-    
-    try {
-      const parsed = JSON.parse(jsonString);
-      return PersonalizedDonationPromptOutputSchema.parse(parsed);
-    } catch (e) {
-      console.error("Failed to parse JSON response from AI:", e);
-      // Fallback to a default value if parsing fails
-      return {
-        donationAmount: 500,
-        reason: "Your support can make a huge difference in a young boxer's life."
-      };
-    }
+    const {output} = await prompt(input);
+    return output!;
   }
 );
