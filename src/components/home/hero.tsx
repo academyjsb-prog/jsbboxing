@@ -26,10 +26,10 @@ const sliderContent = [
     },
     {
         id: 'hero-slider-2',
-        title: 'Join a Community of Fighters',
-        description: 'Our academy is more than just a gym; it’s a family. We foster a supportive environment where young athletes build lifelong friendships and learn the value of teamwork.',
-        buttonText: 'Meet the Team',
-        buttonLink: '/about',
+        title: 'We Train Champions Not Just Boxers.',
+        description: 'We shape discipline, ethics, and values - helping every child grow stronger inside and outside the ring.',
+        buttonText: 'What our Supporters say',
+        buttonLink: '/#testimonials',
     },
     {
         id: 'hero-slider-3',

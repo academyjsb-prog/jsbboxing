@@ -12,7 +12,7 @@ import { testimonials } from '@/lib/data';
 
 export default function Testimonials() {
   return (
-    <section className="py-12 md:py-20 bg-card">
+    <section id="testimonials" className="py-12 md:py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold font-headline tracking-tight sm:text-4xl">
