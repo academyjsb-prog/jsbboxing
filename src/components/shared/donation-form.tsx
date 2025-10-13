@@ -8,7 +8,6 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { useToast } from '@/hooks/use-toast';
-import { useEffect } from 'react';
 import { useDonation } from '@/context/donation-context';
 
 const donationAmounts = ['100', '500', '1000'];
@@ -32,37 +31,25 @@ const donationSchema = z.object({
 
 type DonationFormValues = z.infer<typeof donationSchema>;
 
-interface DonationFormProps {
-    suggestedAmount?: number;
-}
-
 declare global {
     interface Window {
         Razorpay: any;
     }
 }
 
-export default function DonationForm({ suggestedAmount }: DonationFormProps) {
+export default function DonationForm() {
   const { toast } = useToast();
   const { setIsOpen } = useDonation();
   
-  const allAmounts = suggestedAmount ? [...new Set([suggestedAmount.toString(), ...donationAmounts])].sort((a, b) => +a - +b) : donationAmounts;
-
   const form = useForm<DonationFormValues>({
     resolver: zodResolver(donationSchema),
     defaultValues: {
-      amountOption: suggestedAmount?.toString() || '500',
+      amountOption: '500',
       name: '',
       email: '',
       phone: '',
     },
   });
-
-  useEffect(() => {
-    if (suggestedAmount) {
-        form.setValue('amountOption', suggestedAmount.toString());
-    }
-  }, [suggestedAmount, form]);
 
   function onSubmit(data: DonationFormValues) {
     const finalAmount = data.amountOption === 'custom' ? data.customAmount : data.amountOption;
@@ -143,7 +130,7 @@ export default function DonationForm({ suggestedAmount }: DonationFormProps) {
                   defaultValue={field.value}
                   className="grid grid-cols-2 gap-4"
                 >
-                  {allAmounts.map(amount => (
+                  {donationAmounts.map(amount => (
                     <FormItem key={amount} className="flex items-center space-x-3 space-y-0">
                       <FormControl>
                         <RadioGroupItem value={amount} />
