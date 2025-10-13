@@ -7,10 +7,9 @@ import { Button } from '@/components/ui/button';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/hooks/use-toast';
-import { CreditCard, Landmark, Wallet } from 'lucide-react';
 import { useEffect } from 'react';
+import { useDonation } from '@/context/donation-context';
 
 const donationAmounts = ['100', '500', '1000'];
 
@@ -19,7 +18,7 @@ const donationSchema = z.object({
   customAmount: z.string().optional(),
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
-  paymentMethod: z.string(),
+  phone: z.string().min(10, { message: 'Please enter a valid 10-digit phone number.'}).max(10, { message: 'Please enter a valid 10-digit phone number.'}),
 }).refine(data => {
     if (data.amountOption === 'custom' && (!data.customAmount || +data.customAmount <= 0)) {
         return false;
@@ -37,8 +36,15 @@ interface DonationFormProps {
     suggestedAmount?: number;
 }
 
+declare global {
+    interface Window {
+        Razorpay: any;
+    }
+}
+
 export default function DonationForm({ suggestedAmount }: DonationFormProps) {
   const { toast } = useToast();
+  const { setIsOpen } = useDonation();
   
   const allAmounts = suggestedAmount ? [...new Set([suggestedAmount.toString(), ...donationAmounts])].sort((a, b) => +a - +b) : donationAmounts;
 
@@ -48,7 +54,7 @@ export default function DonationForm({ suggestedAmount }: DonationFormProps) {
       amountOption: suggestedAmount?.toString() || '500',
       name: '',
       email: '',
-      paymentMethod: 'upi',
+      phone: '',
     },
   });
 
@@ -60,11 +66,66 @@ export default function DonationForm({ suggestedAmount }: DonationFormProps) {
 
   function onSubmit(data: DonationFormValues) {
     const finalAmount = data.amountOption === 'custom' ? data.customAmount : data.amountOption;
-    toast({
-      title: 'Donation Submitted!',
-      description: `Thank you, ${data.name}! Your donation of ₹${finalAmount} is being processed via ${data.paymentMethod}.`,
+    if (!finalAmount) return;
+
+    const options = {
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID, // Your Razorpay Key ID
+        amount: Number(finalAmount) * 100, // Amount in paise
+        currency: "INR",
+        name: "JSB Boxing Academy",
+        description: "Donation to support young fighters",
+        image: "https://ik.imagekit.io/nb6cfzd7m/logo.png", // A URL to your logo
+        handler: function (response: any) {
+            toast({
+              title: "Payment Successful!",
+              description: `Thank you, ${data.name}, for your generous donation of ₹${finalAmount}.`,
+            });
+            console.log("Razorpay Response:", response);
+            setIsOpen(false);
+        },
+        prefill: {
+            name: data.name,
+            email: data.email,
+            contact: data.phone,
+        },
+        notes: {
+            address: "JSB Boxing Academy, Sadopur, Uttar Pradesh"
+        },
+        theme: {
+            color: "#E63946"
+        },
+        modal: {
+            ondismiss: function() {
+                toast({
+                    variant: 'destructive',
+                    title: 'Payment Cancelled',
+                    description: 'The payment process was not completed.',
+                });
+            }
+        }
+    };
+
+    if (!options.key) {
+        toast({
+            variant: 'destructive',
+            title: 'Configuration Error',
+            description: 'Razorpay is not configured. Please contact the site administrator.',
+        });
+        console.error("Razorpay Key ID is not set in environment variables.");
+        return;
+    }
+
+    const rzp1 = new window.Razorpay(options);
+    rzp1.on('payment.failed', function (response: any) {
+        toast({
+            variant: 'destructive',
+            title: 'Payment Failed',
+            description: `Error: ${response.error.description}`,
+        });
+        console.error("Razorpay Payment Failed:", response.error);
     });
-    console.log({ ...data, finalAmount });
+
+    rzp1.open();
   }
 
   return (
@@ -119,7 +180,7 @@ export default function DonationForm({ suggestedAmount }: DonationFormProps) {
           />
         )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4">
           <FormField
             control={form.control}
             name="name"
@@ -146,29 +207,23 @@ export default function DonationForm({ suggestedAmount }: DonationFormProps) {
               </FormItem>
             )}
           />
+           <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Phone Number</FormLabel>
+                <FormControl>
+                  <Input type="tel" placeholder="Your 10-digit phone number" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         </div>
-
-        <FormField
-          control={form.control}
-          name="paymentMethod"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Payment Method</FormLabel>
-              <FormControl>
-                <Tabs defaultValue={field.value} onValueChange={field.onChange} className="w-full">
-                  <TabsList className="grid w-full grid-cols-3">
-                    <TabsTrigger value="upi"><Wallet className="mr-2 h-4 w-4" />UPI</TabsTrigger>
-                    <TabsTrigger value="card"><CreditCard className="mr-2 h-4 w-4" />Card</TabsTrigger>
-                    <TabsTrigger value="netbanking"><Landmark className="mr-2 h-4 w-4" />Banking</TabsTrigger>
-                  </TabsList>
-                </Tabs>
-              </FormControl>
-            </FormItem>
-          )}
-        />
         
         <Button type="submit" className="w-full" size="lg">
-          Donate Securely
+          Proceed to Pay
         </Button>
       </form>
     </Form>

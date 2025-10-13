@@ -7,6 +7,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import DonationDialog from '@/components/shared/donation-dialog';
 import { cn } from '@/lib/utils';
+import Script from 'next/script';
 
 const ptSans = PT_Sans({
   subsets: ['latin'],
@@ -50,6 +51,7 @@ export default function RootLayout({
           <DonationDialog />
           <Toaster />
         </DonationProvider>
+        <Script src="https://checkout.razorpay.com/v1/checkout.js" />
       </body>
     </html>
   );
