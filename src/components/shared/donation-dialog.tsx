@@ -1,7 +1,6 @@
 
 'use client';
 
-import { useEffect, useState } from 'react';
 import { useDonation } from '@/context/donation-context';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import DonationForm from './donation-form';
