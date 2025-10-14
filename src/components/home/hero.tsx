@@ -173,6 +173,7 @@ export default function Hero() {
                             fill
                             className="object-cover rounded-[2.5rem]"
                             priority={slide.id === 'hero-slider-1'}
+                            sizes="(max-width: 768px) 100vw, 50vw"
                           />
                         )}
                       </div>

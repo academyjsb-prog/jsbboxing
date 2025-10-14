@@ -68,6 +68,8 @@ export default function AboutPageClient() {
                 width={1280}
                 height={720}
                 className="rounded-lg shadow-lg object-cover w-full h-auto"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           )}

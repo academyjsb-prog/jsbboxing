@@ -46,6 +46,7 @@ export default function GalleryPreview() {
                       alt={image.description}
                       data-ai-hint={image.imageHint}
                       fill
+                      loading="lazy"
                       className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
@@ -70,6 +71,7 @@ export default function GalleryPreview() {
                       width={1920}
                       height={1080}
                       className="w-auto h-auto max-w-full max-h-full object-contain rounded-lg"
+                      loading="lazy"
                     />
                     <DialogClose
                       className={cn(
@@ -97,4 +99,3 @@ export default function GalleryPreview() {
     </>
   );
 }
-

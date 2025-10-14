@@ -29,6 +29,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   alt={image.description}
                   data-ai-hint={image.imageHint}
                   fill
+                  loading="lazy"
                   className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
@@ -56,6 +57,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   width={1920}
                   height={1080}
                   className="w-auto h-auto max-w-full max-h-full object-contain rounded-lg"
+                  loading="lazy"
                 />
                 <DialogClose className={cn(
                   buttonVariants({ variant: "ghost", size: "icon" }),
