@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { teamMembers } from '@/lib/data';
@@ -7,7 +8,7 @@ export default function TeamSection() {
   const team = teamMembers
     .filter(member => {
       const role = member.role.toLowerCase();
-      return !role.includes('fighter') && !role.includes('coach') && !role.includes('player');
+      return role.includes('founder');
     })
     .sort((a, b) => a.name.localeCompare(b.name));
     

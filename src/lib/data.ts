@@ -59,6 +59,16 @@ export const teamMembers: TeamMember[] = [
     name: 'Krish Bhati',
     role: 'National Player',
     image: PlaceHolderImages.find(img => img.id === 'team-krish'),
+  },
+  {
+    name: 'Ankit Kumar',
+    role: 'Founder',
+    image: PlaceHolderImages.find(img => img.id === 'team-1'),
+  },
+  {
+    name: 'Sachin Kumar',
+    role: 'Co-Founder',
+    image: PlaceHolderImages.find(img => img.id === 'team-4'),
   }
 ];
 
@@ -82,6 +92,3 @@ export const testimonials = [
     image: PlaceHolderImages.find(img => img.id === 'testimonial-parth'),
   }
 ];
-
-    
-    
