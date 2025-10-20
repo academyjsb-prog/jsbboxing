@@ -68,7 +68,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: 'Vijendra Kumar Nagar',
     role: 'Businessman, Donator',
-    image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-vijendra'),
   },
   {
     name: 'Dr. Parth Chopra',
@@ -82,13 +82,13 @@ export const testimonials = [
     name: 'Vijendra Kumar Nagar',
     role: 'Businessman, Donator',
     quote: 'Supporting JSB Boxing Academy is inspiring—seeing underprivileged kids grow confident and disciplined, knowing my donation helps shape real champions, brings me immense joy.',
-    image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-vijendra'),
   },
   {
     name: 'Sunita Sharma',
     role: 'Local Business Owner',
     quote: 'Every contribution, big or small, goes directly to training and equipment for the kids. That’s what makes JSB Boxing Academy truly impactful.',
-    image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-sunita'),
   },
   {
     name: 'Dr. Parth Chopra',
