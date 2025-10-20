@@ -64,8 +64,8 @@ export const teamMembers: TeamMember[] = [
 
 export const testimonials = [
   {
-    name: 'Priya Singh',
-    role: 'Community Supporter',
+    name: 'Vijendra Kumar Nagar',
+    role: 'Businessman, Donator',
     quote: 'Supporting JSB Boxing Academy is inspiring—seeing underprivileged kids grow confident and disciplined, knowing my donation helps shape real champions, brings me immense joy.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
   },
