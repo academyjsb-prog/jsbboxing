@@ -32,7 +32,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: 'Bhavya Pratap',
-    role: 'Asian Championship, Participation',
+    role: 'Fighter, Asian Championship, Participation',
     image: PlaceHolderImages.find(img => img.id === 'team-2'),
   },
   {
