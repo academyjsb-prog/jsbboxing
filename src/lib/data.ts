@@ -59,6 +59,11 @@ export const teamMembers: TeamMember[] = [
     name: 'Aarav "The Dynamo" Sharma',
     role: 'Junior Champion Fighter',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-1'),
+  },
+  {
+    name: 'Jiya',
+    role: 'National Player',
+    image: PlaceHolderImages.find(img => img.id === 'team-jiya'),
   }
 ];
 
