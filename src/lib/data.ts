@@ -26,11 +26,6 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
   {
-    name: 'John "The Iron Fist" Doe',
-    role: 'Head Coach & Founder',
-    image: PlaceHolderImages.find(img => img.id === 'team-1'),
-  },
-  {
     name: 'Bhavya Pratap',
     role: 'Fighter, Asian Championship, Participation',
     image: PlaceHolderImages.find(img => img.id === 'team-2'),
@@ -45,20 +40,10 @@ export const teamMembers: TeamMember[] = [
     role: 'National Player',
     image: PlaceHolderImages.find(img => img.id === 'team-5'),
   },
-    {
-    name: 'Chris "The Strategist" Lee',
-    role: 'Assistant Coach',
-    image: PlaceHolderImages.find(img => img.id === 'team-4'),
-  },
   {
     name: 'David "The Vision" Chen',
     role: 'Co-Founder',
     image: PlaceHolderImages.find(img => img.id === 'team-6'),
-  },
-   {
-    name: 'Aarav "The Dynamo" Sharma',
-    role: 'Junior Champion Fighter',
-    image: PlaceHolderImages.find(img => img.id === 'testimonial-1'),
   },
   {
     name: 'Jiya',
