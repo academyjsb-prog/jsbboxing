@@ -31,8 +31,8 @@ export const teamMembers: TeamMember[] = [
     image: PlaceHolderImages.find(img => img.id === 'team-1'),
   },
   {
-    name: 'Jane "Swift" Smith',
-    role: 'Senior Trainer & Former Fighter',
+    name: 'Bhavya Pratap',
+    role: 'Asian Championship, Participation',
     image: PlaceHolderImages.find(img => img.id === 'team-2'),
   },
   {
