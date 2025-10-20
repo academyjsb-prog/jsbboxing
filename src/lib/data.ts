@@ -41,8 +41,8 @@ export const teamMembers: TeamMember[] = [
     image: PlaceHolderImages.find(img => img.id === 'team-3'),
   },
   {
-    name: 'Emily "Lights Out" White',
-    role: 'National Champion Fighter',
+    name: 'Riya',
+    role: 'National Player',
     image: PlaceHolderImages.find(img => img.id === 'team-5'),
   },
     {
