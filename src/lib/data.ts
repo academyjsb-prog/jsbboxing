@@ -76,8 +76,8 @@ export const testimonials = [
     image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
   },
   {
-    name: 'Parth Chopra',
-    role: 'Individual donor and Mentor',
+    name: 'Dr. Parth Chopra',
+    role: 'Resident Doctor, Germany',
     quote: 'JSB Boxing Academy is a wonderful initiative! Helping kids discover strength and confidence, while my contribution makes a real impact and is 80G tax-beneficial, feels truly rewarding.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-parth'),
   }
