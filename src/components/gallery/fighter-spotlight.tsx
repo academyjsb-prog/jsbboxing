@@ -4,7 +4,10 @@ import { teamMembers } from '@/lib/data';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export default function FighterSpotlight() {
-  const fighters = teamMembers.filter(member => member.role.toLowerCase().includes('fighter'));
+  const fighters = teamMembers.filter(member => {
+    const role = member.role.toLowerCase();
+    return role.includes('fighter') || role.includes('coach') || role.includes('player');
+  });
 
   return (
     <section>

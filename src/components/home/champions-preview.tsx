@@ -7,7 +7,10 @@ import ChampionsSection from '@/components/about/champions-section';
 import { teamMembers } from '@/lib/data';
 
 export default function ChampionsPreview() {
-    const champions = teamMembers.filter(member => member.role.toLowerCase().includes('fighter')).slice(0, 3);
+    const champions = teamMembers.filter(member => {
+      const role = member.role.toLowerCase();
+      return role.includes('fighter') || role.includes('coach') || role.includes('player');
+    }).slice(0, 3);
 
     return (
         <section className="py-12 md:py-20 bg-background">
