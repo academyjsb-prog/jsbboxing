@@ -70,18 +70,6 @@ export const testimonials = [
     image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
   },
   {
-    name: 'Amit Verma',
-    role: 'Corporate Donor',
-    quote: 'I’ve supported many causes, but JSB Boxing Academy truly stands out. Seeing children from underprivileged backgrounds grow confident, disciplined, and full of dreams is inspiring. Knowing my donation is helping shape real champions gives me immense satisfaction.',
-    image: PlaceHolderImages.find(img => img.id === 'testimonial-1'),
-  },
-  {
-    name: 'Rohit Sharma',
-    role: 'Individual Donor',
-    quote: 'This is a really nice initiative! I’ve seen how JSB Boxing Academy is helping kids from humble backgrounds discover their strength and confidence. The best part is that my contribution doesn’t just make a difference — it’s also eligible for tax benefits under 80G. It feels good to give where it truly matters.',
-    image: PlaceHolderImages.find(img => img.id === 'testimonial-2'),
-  },
-  {
     name: 'Sunita Sharma',
     role: 'Local Business Owner',
     quote: 'Every contribution, big or small, goes directly to training and equipment for the kids. That’s what makes JSB Boxing Academy truly impactful.',
