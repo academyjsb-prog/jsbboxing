@@ -41,11 +41,6 @@ export const teamMembers: TeamMember[] = [
     image: PlaceHolderImages.find(img => img.id === 'team-5'),
   },
   {
-    name: 'Pramod Kumar',
-    role: 'Coach',
-    image: PlaceHolderImages.find(img => img.id === 'team-6'),
-  },
-  {
     name: 'Jiya',
     role: 'National Player',
     image: PlaceHolderImages.find(img => img.id === 'team-jiya'),
@@ -64,6 +59,31 @@ export const teamMembers: TeamMember[] = [
     name: 'Sachin Kumar',
     role: 'Co-Founder',
     image: PlaceHolderImages.find(img => img.id === 'team-4'),
+  },
+  {
+    name: 'Pramod Kumar',
+    role: 'Coach',
+    image: PlaceHolderImages.find(img => img.id === 'team-pramod'),
+  },
+  {
+    name: 'Ashok Kumar',
+    role: 'Coach',
+    image: PlaceHolderImages.find(img => img.id === 'team-ashok'),
+  },
+  {
+    name: 'Pravesh Kumar',
+    role: 'Coach',
+    image: PlaceHolderImages.find(img => img.id === 'team-pravesh'),
+  },
+  {
+    name: 'Vijendra Kumar Nagar',
+    role: 'Businessman, Donator',
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-new-supporter'),
+  },
+  {
+    name: 'Dr. Parth Chopra',
+    role: 'Resident Doctor, Germany, Donator',
+    image: PlaceHolderImages.find(img => img.id === 'testimonial-parth'),
   }
 ];
 

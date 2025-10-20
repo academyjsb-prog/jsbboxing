@@ -8,7 +8,7 @@ export default function TeamSection() {
   const team = teamMembers
     .filter(member => {
       const role = member.role.toLowerCase();
-      return role.includes('founder');
+      return !role.includes('fighter') && !role.includes('player');
     })
     .sort((a, b) => a.name.localeCompare(b.name));
     
