@@ -61,11 +61,6 @@ export const teamMembers: TeamMember[] = [
     image: PlaceHolderImages.find(img => img.id === 'team-krish'),
   },
   {
-    name: 'Pramod Kumar',
-    role: 'Coach',
-    image: PlaceHolderImages.find(img => img.id === 'team-1'),
-  },
-  {
     name: 'Sachin Kumar',
     role: 'Co-Founder',
     image: PlaceHolderImages.find(img => img.id === 'team-4'),
