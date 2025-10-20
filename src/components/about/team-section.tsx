@@ -4,10 +4,13 @@ import { teamMembers } from '@/lib/data';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export default function TeamSection() {
-  const team = teamMembers.filter(member => {
-    const role = member.role.toLowerCase();
-    return !role.includes('fighter') && !role.includes('coach') && !role.includes('player');
-  });
+  const team = teamMembers
+    .filter(member => {
+      const role = member.role.toLowerCase();
+      return !role.includes('fighter') && !role.includes('coach') && !role.includes('player');
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
+    
   return (
     <section>
       <div className="text-center mb-12">
