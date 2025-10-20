@@ -249,7 +249,7 @@
     {
       "id": "testimonial-3",
       "description": "Portrait of a mentor.",
-      "imageUrl": "https://images.unsplash.com/photo-1741805190358-aff8c1c1d72a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1MTQ2MDN8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1741805190358-aff8c1c1d72a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZW50b3IlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTk1MTQ2MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "mentor portrait"
     },
     {
@@ -269,6 +269,18 @@
       "description": "Profile picture of Jiya.",
       "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHByb2ZpbGV8ZW58MHx8fHwxNzU5NTA3NDkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman profile"
+    },
+    {
+      "id": "team-love",
+      "description": "Profile picture of Love Sharma.",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwcm9maWxlfGVufDB8fHx8MTc1OTQ4OTUyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man profile"
+    },
+    {
+      "id": "team-krish",
+      "description": "Profile picture of Krish Bhati.",
+      "imageUrl": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwcm9maWxlfGVufDB8fHx8MTc1OTQ4OTUyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man profile"
     }
   ]
 }
