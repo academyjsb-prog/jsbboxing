@@ -52,7 +52,7 @@ export default function AboutPageClient() {
   const champions = teamMembers.filter(member => {
     const role = member.role.toLowerCase();
     return role.includes('fighter') || role.includes('coach') || role.includes('player');
-  });
+  }).sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className="bg-background text-foreground">
