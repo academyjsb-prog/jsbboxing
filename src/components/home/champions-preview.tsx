@@ -10,7 +10,7 @@ export default function ChampionsPreview() {
     const champions = teamMembers.filter(member => {
       const role = member.role.toLowerCase();
       return role.includes('fighter') || role.includes('coach') || role.includes('player');
-    }).slice(0, 3);
+    }).sort((a, b) => a.name.localeCompare(b.name)).slice(0, 3);
 
     return (
         <section className="py-12 md:py-20 bg-background">
