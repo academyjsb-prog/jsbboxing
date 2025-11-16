@@ -8,7 +8,6 @@ import AboutPreview from '@/components/home/about-preview';
 import ChampionsPreview from '@/components/home/champions-preview';
 import ImpactPreview from '@/components/home/impact-preview';
 import Hero from '@/components/home/hero';
-import DonationModalTrigger from '@/components/home/donation-modal-trigger';
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <GalleryPreview />
       <GetInvolved />
       <AboutPreview />
-      <DonationModalTrigger />
     </>
   );
 }
