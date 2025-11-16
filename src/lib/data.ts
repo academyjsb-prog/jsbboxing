@@ -27,13 +27,18 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     name: 'Bhavya Pratap',
-    role: 'Fighter, Asian Championship, Participation',
+    role: 'International Player',
     image: PlaceHolderImages.find(img => img.id === 'team-2'),
   },
   {
     name: 'Riya',
     role: 'National Player',
     image: PlaceHolderImages.find(img => img.id === 'team-5'),
+  },
+  {
+    name: 'Sonam',
+    role: 'NIS Coach',
+    image: PlaceHolderImages.find(img => img.id === 'team-sonam'),
   },
   {
     name: 'Jiya',
