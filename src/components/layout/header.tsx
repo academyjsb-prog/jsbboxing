@@ -3,16 +3,13 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { navLinks } from '@/lib/data';
-import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import { useDonation } from '@/context/donation-context';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 export default function Header() {
-  const { openDonationDialog } = useDonation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -35,7 +32,9 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Button onClick={openDonationDialog}>Donate Now</Button>
+          <Button asChild>
+            <Link href="/donate">Donate Now</Link>
+          </Button>
         </nav>
         <div className="md:hidden">
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -71,8 +70,8 @@ export default function Header() {
                     </Link>
                   ))}
                 </nav>
-                <Button onClick={() => { openDonationDialog(); setIsMenuOpen(false); }} size="lg">
-                  Donate Now
+                <Button asChild size="lg">
+                  <Link href="/donate" onClick={() => setIsMenuOpen(false)}>Donate Now</Link>
                 </Button>
               </div>
             </SheetContent>

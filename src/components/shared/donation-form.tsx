@@ -8,7 +8,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { useToast } from '@/hooks/use-toast';
-import { useDonation } from '@/context/donation-context';
+import { useRouter } from 'next/navigation';
 
 const donationAmounts = ['100', '500', '1000'];
 
@@ -39,7 +39,7 @@ declare global {
 
 export default function DonationForm() {
   const { toast } = useToast();
-  const { setIsOpen } = useDonation();
+  const router = useRouter();
   
   const form = useForm<DonationFormValues>({
     resolver: zodResolver(donationSchema),
@@ -68,7 +68,7 @@ export default function DonationForm() {
               description: `Thank you, ${data.name}, for your generous donation of ₹${finalAmount}.`,
             });
             console.log("Razorpay Response:", response);
-            setIsOpen(false);
+            router.push('/');
         },
         prefill: {
             name: data.name,

@@ -2,12 +2,11 @@
 'use client';
 
 import { useState } from 'react';
-import { useDonation } from '@/context/donation-context';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Handshake, Heart, UserPlus } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
+import Link from 'next/link';
 
 const involvementOptions = [
   {
@@ -16,10 +15,6 @@ const involvementOptions = [
     description: 'Your support covers training, equipment, nutrition, and more — helping kids chase their dreams.',
     buttonText: 'Donate Now',
     action: 'donate',
-    content: {
-      title: 'Support Our Fighters',
-      description: 'Your generosity fuels their dreams and builds a stronger community. Every contribution, big or small, makes a difference.'
-    }
   },
   {
     icon: <UserPlus className="h-8 w-8 text-primary" />,
@@ -48,19 +43,13 @@ const involvementOptions = [
 type InvolvementOption = (typeof involvementOptions)[0];
 
 export default function GetInvolved() {
-  const { openDonationDialog } = useDonation();
   const [dialogOpen, setDialogOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<InvolvementOption | null>(null);
 
-  const handleAction = (action: string) => {
-    if (action === 'donate') {
-      openDonationDialog();
-    } else {
-      const option = involvementOptions.find(opt => opt.action === action);
-      if (option) {
-        setSelectedOption(option);
-        setDialogOpen(true);
-      }
+  const handleAction = (option: InvolvementOption) => {
+    if (option.action !== 'donate') {
+      setSelectedOption(option);
+      setDialogOpen(true);
     }
   };
 
@@ -87,9 +76,15 @@ export default function GetInvolved() {
                 </CardHeader>
                 <CardContent className="flex-grow flex flex-col">
                   <p className="text-muted-foreground font-body text-sm flex-grow">{option.description}</p>
-                  <Button onClick={() => handleAction(option.action)} className="mt-6 w-full">
-                    {option.buttonText}
-                  </Button>
+                  {option.action === 'donate' ? (
+                     <Button asChild className="mt-6 w-full">
+                        <Link href="/donate">{option.buttonText}</Link>
+                    </Button>
+                  ) : (
+                    <Button onClick={() => handleAction(option)} className="mt-6 w-full">
+                      {option.buttonText}
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}

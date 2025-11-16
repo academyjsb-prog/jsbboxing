@@ -13,7 +13,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { useDonation } from '@/context/donation-context';
 import Autoplay from 'embla-carousel-autoplay';
 import { cn } from '@/lib/utils';
 
@@ -29,7 +28,6 @@ const sliderContent = [
       'At JSB Boxing Academy, both boys and girls receive free professional boxing training — unlocking strength, confidence, and opportunity.',
     buttonText: 'About Us',
     buttonLink: '/about',
-    action: 'link',
   },
   {
     id: 'hero-slider-2',
@@ -42,7 +40,6 @@ const sliderContent = [
       'We shape discipline, ethics, and values - helping every child grow stronger inside and outside the ring.',
     buttonText: 'What our Supporters say',
     buttonLink: '/#testimonials',
-    action: 'link',
   },
   {
     id: 'hero-slider-3',
@@ -54,8 +51,7 @@ const sliderContent = [
     description:
       'Be the reason a child finds purpose, power, and pride through boxing.',
     buttonText: 'Donate Now',
-    buttonLink: '#',
-    action: 'donate',
+    buttonLink: '/donate',
   },
   {
     id: 'hero-slider-4',
@@ -68,12 +64,10 @@ const sliderContent = [
       'Each child in our academy has a story of courage and determination.',
     buttonText: 'Meet the champion',
     buttonLink: '/about',
-    action: 'link',
   },
 ];
 
 export default function Hero() {
-  const { openDonationDialog } = useDonation();
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
 
@@ -89,12 +83,6 @@ export default function Hero() {
     });
   }, [api]);
 
-
-  const handleButtonClick = (action: string) => {
-    if (action === 'donate') {
-      openDonationDialog();
-    }
-  };
 
   const handleDotClick = useCallback((index: number) => {
     api?.scrollTo(index);
@@ -118,21 +106,11 @@ export default function Hero() {
                 </p>
             </div>
             
-            {currentSlide.action === 'link' ? (
-              <Button asChild size="lg" className="w-fit">
-                <Link href={currentSlide.buttonLink}>
-                  {currentSlide.buttonText} <ArrowRight className="ml-2" />
-                </Link>
-              </Button>
-            ) : (
-              <Button
-                size="lg"
-                onClick={() => handleButtonClick(currentSlide.action)}
-                className="w-fit"
-              >
+            <Button asChild size="lg" className="w-fit">
+              <Link href={currentSlide.buttonLink}>
                 {currentSlide.buttonText} <ArrowRight className="ml-2" />
-              </Button>
-            )}
+              </Link>
+            </Button>
 
             <div className="flex gap-2 pt-4">
                 {sliderContent.map((_, index) => (

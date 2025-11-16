@@ -3,9 +3,6 @@
 
 import Link from 'next/link';
 import { socialLinks } from '@/lib/data';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { useDonation } from '@/context/donation-context';
 import { useState } from 'react';
 import {
   Dialog,
@@ -14,7 +11,6 @@ import {
   DialogTitle,
   DialogDescription,
 } from '@/components/ui/dialog';
-import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 
 const involvementContent = {
   volunteer: {
@@ -30,7 +26,6 @@ const involvementContent = {
 };
 
 export default function Footer() {
-  const { openDonationDialog } = useDonation();
   const [dialogOpen, setDialogOpen] = useState(false);
   const [dialogContent, setDialogContent] = useState({ title: '', description: '' });
 
@@ -95,7 +90,7 @@ export default function Footer() {
                <div className="text-center sm:text-left">
                 <p className="text-lg font-medium">Get Involved</p>
                 <nav className="mt-4 flex flex-col space-y-2 text-sm">
-                  <button onClick={openDonationDialog} className="text-left text-muted-foreground transition hover:text-primary">Donate</button>
+                  <Link href="/donate" className="text-muted-foreground transition hover:text-primary">Donate</Link>
                   <button onClick={() => handleSupportClick('volunteer')} className="text-left text-muted-foreground transition hover:text-primary">Volunteer</button>
                   <button onClick={() => handleSupportClick('share')} className="text-left text-muted-foreground transition hover:text-primary">Share Your Skills</button>
                   <Link href="/about" className="text-muted-foreground transition hover:text-primary pt-2">Our Mission</Link>
