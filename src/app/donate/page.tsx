@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function DonatePage() {
-    const donateImage = PlaceHolderImages.find(img => img.id === 'donate-page-girls');
+    const donateImage = PlaceHolderImages.find(img => img.id === 'vision-champions');
 
     return (
         <div className="bg-background text-foreground py-12 md:py-20">
