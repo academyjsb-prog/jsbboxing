@@ -17,8 +17,8 @@ export default function DonatePage() {
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-                        <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">Educated Girls Are Powerful!</h1>
-                        <p className="mt-4 text-lg text-muted-foreground">Educate a Girl | Educate a Nation</p>
+                        <h1 className="text-4xl font-bold font-headline tracking-tight sm:text-5xl">Support a Champion's Dream</h1>
+                        <p className="mt-4 text-lg text-muted-foreground">Your donation fuels the future of boxing.</p>
                         {donateImage && (
                             <div className="mt-8 w-full aspect-video relative">
                                 <Image
