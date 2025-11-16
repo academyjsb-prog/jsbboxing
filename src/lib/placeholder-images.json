@@ -67,6 +67,12 @@
       "imageHint": "boxing team"
     },
     {
+      "id": "donate-page-girls",
+      "description": "A group of smiling girls holding up letters.",
+      "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1948&auto=format&fit=crop",
+      "imageHint": "happy children"
+    },
+    {
       "id": "gallery-6",
       "description": "A group of young boxers in training.",
       "imageUrl": "https://ik.imagekit.io/nb6cfzd7m/6.png?updatedAt=1759520792310",
