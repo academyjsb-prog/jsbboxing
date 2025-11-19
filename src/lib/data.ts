@@ -72,7 +72,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: 'Vijendra Kumar Nagar',
-    role: 'Businessman, Donator',
+    role: 'Advisor',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-vijendra'),
   },
   {
@@ -85,7 +85,7 @@ export const teamMembers: TeamMember[] = [
 export const testimonials = [
   {
     name: 'Vijendra Kumar Nagar',
-    role: 'Businessman, Donator',
+    role: 'Advisor',
     quote: 'Supporting JSB Boxing Academy is inspiring—seeing underprivileged kids grow confident and disciplined, knowing my donation helps shape real champions, brings me immense joy.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-vijendra'),
   },
