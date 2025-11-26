@@ -79,6 +79,11 @@ export const teamMembers: TeamMember[] = [
     name: 'Dr. Parth Chopra',
     role: 'Resident Doctor, Germany, Donator',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-parth'),
+  },
+  {
+    name: 'Jaivardhan',
+    role: 'International Player',
+    image: PlaceHolderImages.find(img => img.id === 'team-jaivardhan'),
   }
 ];
 
