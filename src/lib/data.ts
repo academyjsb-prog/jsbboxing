@@ -77,7 +77,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: 'Dr. Parth Chopra',
-    role: 'Resident Doctor, Germany, Donator',
+    role: 'Resident Doctor, Germany, Advisor',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-parth'),
   },
   {
@@ -102,7 +102,7 @@ export const testimonials = [
   },
   {
     name: 'Dr. Parth Chopra',
-    role: 'Resident Doctor, Germany',
+    role: 'Resident Doctor, Germany, Advisor',
     quote: 'JSB Boxing Academy is a wonderful initiative! Helping kids discover strength and confidence, while my contribution makes a real impact and is 80G tax-beneficial, feels truly rewarding.',
     image: PlaceHolderImages.find(img => img.id === 'testimonial-parth'),
   }
