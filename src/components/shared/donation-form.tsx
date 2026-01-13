@@ -135,7 +135,6 @@ export default function DonationForm() {
             title: 'Configuration Error',
             description: 'Razorpay is not configured. Please contact the site administrator.',
         });
-        console.error("Razorpay Key ID is not set in environment variables.");
         return;
     }
 
@@ -325,3 +324,5 @@ export default function DonationForm() {
     </Form>
   );
 }
+
+    
