@@ -116,7 +116,7 @@ export default function DonationForm() {
             originalAmount: data.amountOption === 'custom' ? data.customAmount : data.amountOption,
         },
         theme: {
-            color: "#E63946"
+            color: "#2094f3"
         },
         modal: {
             ondismiss: function() {
@@ -129,7 +129,7 @@ export default function DonationForm() {
         }
     };
 
-    if (!options.key) {
+    if (!options.key || options.key === 'YOUR_RAZORPAY_KEY_ID') {
         toast({
             variant: 'destructive',
             title: 'Configuration Error',
