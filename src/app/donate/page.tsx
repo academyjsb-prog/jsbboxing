@@ -43,22 +43,6 @@ export default function DonatePage() {
                                 <p className="font-semibold">Phone:</p>
                                 <p className="text-muted-foreground">7838785088</p>
                             </div>
-                             <div className="text-center space-y-1">
-                                <p className="font-semibold">Account Name:</p>
-                                <p className="text-muted-foreground">JAISIDHBABA BOXING ACADEMY FEDERATION</p>
-                            </div>
-                            <div className="text-center space-y-1">
-                                <p className="font-semibold">Account No.:</p>
-                                <p className="text-muted-foreground">50200065755352</p>
-                            </div>
-                            <div className="text-center space-y-1">
-                                <p className="font-semibold">Bank:</p>
-                                <p className="text-muted-foreground">HDFC Bank, Sector 18, Noida</p>
-                            </div>
-                            <div className="text-center space-y-1">
-                                <p className="font-semibold">IFSC Code:</p>
-                                <p className="text-muted-foreground">HDFC0000088</p>
-                            </div>
                         </CardContent>
                     </Card>
                 </div>
