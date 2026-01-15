@@ -1,7 +1,7 @@
 
-import DonationForm from '@/components/shared/donation-form';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
     title: 'Donate | JSB Boxing Academy',
@@ -19,11 +19,44 @@ export default function DonatePage() {
                 </div>
 
                 <div className="flex justify-center">
-                    <div className="w-full max-w-lg">
-                        <div className="border rounded-lg p-6 shadow-lg bg-card">
-                            <DonationForm />
-                        </div>
-                    </div>
+                    <Card className="w-full max-w-md shadow-lg">
+                        <CardHeader>
+                            <CardTitle className="text-center font-headline text-2xl">Other Ways to Donate</CardTitle>
+                        </CardHeader>
+                        <CardContent className="flex flex-col items-center space-y-6">
+                            <p className="text-center text-muted-foreground">
+                                You can also donate directly to our bank account using the details below or by scanning the QR code.
+                            </p>
+                            <div className="w-48 h-48 relative">
+                                <Image
+                                    src="https://ik.imagekit.io/nb6cfzd7m/WhatsApp%20Image%202026-01-15%20at%207.56.39%20PM.jpeg"
+                                    alt="QR Code for UPI Payment"
+                                    layout="fill"
+                                    objectFit="contain"
+                                />
+                            </div>
+                            <div className="text-center space-y-1">
+                                <p className="font-semibold">UPI ID / QR:</p>
+                                <p className="text-muted-foreground break-all">7838785088@pthdfc</p>
+                            </div>
+                             <div className="text-center space-y-1">
+                                <p className="font-semibold">Account Name:</p>
+                                <p className="text-muted-foreground">JAISIDHBABA BOXING ACADEMY FEDERATION</p>
+                            </div>
+                            <div className="text-center space-y-1">
+                                <p className="font-semibold">Account No.:</p>
+                                <p className="text-muted-foreground">50200065755352</p>
+                            </div>
+                            <div className="text-center space-y-1">
+                                <p className="font-semibold">Bank:</p>
+                                <p className="text-muted-foreground">HDFC Bank, Sector 18, Noida</p>
+                            </div>
+                            <div className="text-center space-y-1">
+                                <p className="font-semibold">IFSC Code:</p>
+                                <p className="text-muted-foreground">HDFC0000088</p>
+                            </div>
+                        </CardContent>
+                    </Card>
                 </div>
             </div>
         </div>
