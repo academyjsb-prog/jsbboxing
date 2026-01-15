@@ -25,7 +25,7 @@ export default function DonatePage() {
                         </CardHeader>
                         <CardContent className="flex flex-col items-center space-y-6">
                             <p className="text-center text-muted-foreground">
-                                You can donate directly to our bank account using the details below or by scanning the QR code.
+                                You can donate directly by scanning the QR code or using the details below.
                             </p>
                             <div className="w-48 h-48 relative">
                                 <Image
@@ -41,7 +41,7 @@ export default function DonatePage() {
                             </div>
                             <div className="text-center space-y-1">
                                 <p className="font-semibold">Phone:</p>
-                                <p className="text-muted-foreground">7838785088</p>
+                                <p className="text-muted-foreground">+91 7838785088</p>
                             </div>
                         </CardContent>
                     </Card>
