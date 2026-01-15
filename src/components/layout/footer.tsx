@@ -84,7 +84,7 @@ export default function Footer() {
                   <p><strong>Account No.:</strong> 50200065755352</p>
                   <p><strong>Bank:</strong> HDFC Bank, Sector 18, Noida</p>
                   <p><strong>IFSC Code:</strong> HDFC0000088</p>
-                  <p><strong>UPI ID / QR:</strong> यूपीआई@HDFC</p>
+                  <p><strong>UPI ID / QR:</strong> 7838785088@pthdfc</p>
                 </div>
               </div>
                <div className="text-center sm:text-left">
