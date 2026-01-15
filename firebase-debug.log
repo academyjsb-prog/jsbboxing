@@ -4374,3 +4374,9 @@
 [debug] [2026-01-13T06:00:35.223Z] No OAuth tokens found
 [debug] [2026-01-13T06:00:35.225Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/studio-1965453930-51650/billingInfo [none]
 [debug] [2026-01-13T06:00:35.422Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/studio-1965453930-51650/billingInfo 403
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-15T14:50:52.989Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-15T14:50:55.235Z] No OAuth tokens found
+[debug] [2026-01-15T14:50:55.236Z] No OAuth tokens found
+[debug] [2026-01-15T14:50:55.238Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
