@@ -22,9 +22,6 @@ export default function DonatePage() {
                         <div className="border rounded-lg p-6 shadow-lg bg-card">
                             <DonationForm />
                         </div>
-                         <p className="text-xs text-muted-foreground mt-4 text-center">
-                            Registered under Section 8 of the Indian Companies Act, 2013 and under Section 12A of the Income Tax Act, 1961. Donations to JSB Boxing Academy are tax exempted under 80G of the Indian Income Tax Act.
-                        </p>
                     </div>
                     <div className="w-full">
                         <div className="border rounded-lg p-6 shadow-lg bg-card flex flex-col items-center">
