@@ -21,11 +21,11 @@ export default function DonatePage() {
                 <div className="flex justify-center">
                     <Card className="w-full max-w-md shadow-lg">
                         <CardHeader>
-                            <CardTitle className="text-center font-headline text-2xl">Other Ways to Donate</CardTitle>
+                            <CardTitle className="text-center font-headline text-2xl">Ways to Donate</CardTitle>
                         </CardHeader>
                         <CardContent className="flex flex-col items-center space-y-6">
                             <p className="text-center text-muted-foreground">
-                                You can also donate directly to our bank account using the details below or by scanning the QR code.
+                                You can donate directly to our bank account using the details below or by scanning the QR code.
                             </p>
                             <div className="w-48 h-48 relative">
                                 <Image
@@ -38,6 +38,10 @@ export default function DonatePage() {
                             <div className="text-center space-y-1">
                                 <p className="font-semibold">UPI ID / QR:</p>
                                 <p className="text-muted-foreground break-all">7838785088@pthdfc</p>
+                            </div>
+                            <div className="text-center space-y-1">
+                                <p className="font-semibold">Phone:</p>
+                                <p className="text-muted-foreground">7838785088</p>
                             </div>
                              <div className="text-center space-y-1">
                                 <p className="font-semibold">Account Name:</p>
